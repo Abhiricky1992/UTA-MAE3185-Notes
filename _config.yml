@@ -2,4 +2,4 @@ title: UTA MAE 3185 - Introduction to Mechatronics
 description: Thsi site contains notes for the Fall 2024 UTA MAE course Introduction to Mechatronics
 show_downloads: true
 google_analytics:
-theme: jekyll-theme-chirpy
+theme: jekyll-theme-minimal
