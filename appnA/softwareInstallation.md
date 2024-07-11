@@ -7,7 +7,7 @@ MacOS and Linux are very similar in operation for the purpose of the microcontro
 
   ### Zsh Steps
     #### Step 1
-    ![1](figs/mac/openZsh/1.png?raw=true)
+    ![1](./figs/mac/openZsh/1.png?raw=true)
    
     #### Step 2
     ![2](./figs/mac/openZsh/2.png)
