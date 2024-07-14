@@ -17,4 +17,4 @@ The appendix on the Software Installation provides steps to install all the soft
 - [Section 3 - &mu;C-Laptop Communication](sec03/ucLaptopComm.md)
 
 # Back to Introduction
-[Back](../intro.md)
+[Back](../README.md)
