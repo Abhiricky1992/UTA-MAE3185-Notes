@@ -4,9 +4,9 @@ Throughout this course, we'll use three types of number systems, which are Decim
 ## Decimal
 The decimal number system has a base of 10 because it uses ten digits from 0 through 9. In the decimal number system, the positions successive to the left of the decimal point represent units, tens, hundreds, thousands and so on. Thus, every position shows a particular power of the base $(10)$. Consider number $2023$ as an example. The mathematical expression representing this number is 
 
-\begin{equation*}
+$$\begin{equation*}
 2023 = 2 \cdot 10^{3} + 0 \cdot 10^{2} + 2 \cdot 10^{1} + 2 \cdot 10^{0}
-\end{equation*}
+\end{equation*}$$
 
 Note that the number $2023$ is nothing but the coefficients of increasing powers of $10$ in the equation above.
 This number system is mostly used to do regular math operations in a code since majority of math nowadays uses decimal number system. However, it is always stored in binary format in a computer.
