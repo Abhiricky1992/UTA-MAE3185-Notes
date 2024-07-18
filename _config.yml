@@ -6,7 +6,35 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
- # Include javascript libraries
+# Add sphinx settings to load javascript libraries
+sphinx:
+  recursive_update: true # Added so that rest of the defaults do not change, very important for html_theme_options.
+  extra_extensions:
+  - sphinxcontrib.wavedrom
+  config:
+    # A custom wavedrom file is used because the right click menu causes issues with plotly
+    offline_wavedrom_js_path: wavedrom/wavedrom.js
+    offline_skin_js_path: wavedrom/skins.js
+
+    # Add MathJax related settings, necessary for it to work well with plotly.js
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js
+    myst_update_mathjax: false # Needs to be added for Mathjax and Plotly to work nicely together
+
+    # Make code-block copy button not copy console prompts
+    copybutton_prompt_text: 'r">>> |\.\.\. |\$ |\% |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "'
+    copybutton_prompt_is_regexp: True
+
+    # Include javascript libraries
     html_js_files:
       - https://cdn.plot.ly/plotly-2.24.1.min.js # Plotlyjs library to make plots
       - https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js # Anime.js library for animations
+
+    # Define the path for chapter and section wise javascript files.
+    # Contents of this folder will be copied directly to _build/html/
+    html_extra_path:
+      - ./otherFiles/
+    
+    # Add theme specific settings
+    html_theme_options:
+      pygment_light_style: tango
+      pygment_dark_style: monokai
