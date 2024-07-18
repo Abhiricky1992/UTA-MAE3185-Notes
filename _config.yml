@@ -5,3 +5,8 @@ google_analytics:
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+ # Include javascript libraries
+    html_js_files:
+      - https://cdn.plot.ly/plotly-2.24.1.min.js # Plotlyjs library to make plots
+      - https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js # Anime.js library for animations
