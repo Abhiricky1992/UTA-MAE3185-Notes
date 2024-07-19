@@ -1,3 +1,8 @@
+---
+use_math: true
+---
+
+
 # Number Systems
 Throughout this course, we'll use three types of number systems, which are Decimal, Binary and Hexadecimal. All three systems are positional number systems. The major difference between these systems is the base or radix that is used. Let's start with the on that we've been using since childhood, i.e. Decimal.
 
