@@ -1,5 +1,5 @@
 ---
-use_math = true
+use_math : true
 ---
 
 # Working of an ADC
