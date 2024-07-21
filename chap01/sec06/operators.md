@@ -46,7 +46,8 @@ int main() {
 ## Relational Operators
 The following table shows all the relational operators supported by C. Assume variable A holds 10 and variable B holds 20 then,
 
-**Relational Operators**
+**Relational Operators
+
 | **Operator** |                             **Description**                            | **Example** | **Result** |
 |:------------:|:-----------------------------------------------------------------------|:-----------:|:----------:|
 |     `==`     |                    Checks if both operands are equal.                  |   `A == B`  |   `false`  |
@@ -81,6 +82,7 @@ Following table shows all the logical operators supported by C language. Assume 
 
 
 **Logical Operators**
+
 | **Operator (Name)** |                       **Description**                       | **Example** | **Result** |
 |:-------------------:|:------------------------------------------------------------|:-----------:|:----------:|
 |      `&&` (AND)     | Returns true only if all the operands are true or non-zero. |   `A && B`  |   `false`  |
@@ -113,6 +115,7 @@ Bitwise operator works on bits and perform bit-by-bit operation. Since all the i
 The following table lists the bitwise operators supported by C. Assuming variable A and variable B hold values discussed above then
 
 **Bitwise Operators**
+
 | **Operator (Name)** |                                             **Description**                                           | **Example** |     **Result**     |
 |:-------------------:|:------------------------------------------------------------------------------------------------------|:-----------:|:------------------:|
 |      `&` (AND)      | Similar to logical AND on every bit of the two operands.                                              |   `A & B`   |  `12 = 0b00001100` |
@@ -147,6 +150,7 @@ int main()
 There is one basic assignment operator which assigns the value of the expression on the right hand side to the variable on the left hand side. Rest of the assignment operators are similar to the operators discussed previously but are designed for a very specific case, operate on the operand on the left hand side and save the result in the same operand. Assume variable A holds 2, variable B holds 3 and variable C holds 6, then
 
 **Assignment Operators**
+
 | **Operator** |                                                     **Description**                                                     | **Example** |    **Result**   |
 |:------------:|:-----------------------------------------------------------------------------------------------------------------------:|:-----------:|:---------------:|
 |       `=`      | Assigns values from right side operands to left side operand.                                                           |  `C = A + B`  |  `C = 2 + 3 = 5`  |
@@ -189,6 +193,7 @@ For example, `x = 7 + 3 * 2;` here, `x` is assigned `13`, not `20` because opera
 Following table shows the operator precedence order where, operators with the highest precedence appear at the top of the table, and those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.
 
 **Operator Precedence Order**
+
 |  **Category**  |            **Operator**           | **Associativity** |
 |:--------------:|:---------------------------------:|:-----------------:|
 |     Postfix    |  `()`, `[]`, `->`, `.` ,`++` ,`--`|   Left to right   |
