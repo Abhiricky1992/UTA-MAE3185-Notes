@@ -6,13 +6,13 @@ MacOS and Linux are very similar in operation for the purpose of the microcontro
 - Open terminal app. Note that `zsh` is being used as the default shell. If `bash` is being used then continue to the [Bash Steps](softwareInstallation.md#bash-steps)
 ### Zsh Steps
 #### Step 1
-    ![1](./figs/mac/openZsh/1.png?raw=true)
+![1](./figs/mac/openZsh/1.png?raw=true)
 #### Step 2
-    ![2](./figs/mac/openZsh/2.png)
+![2](./figs/mac/openZsh/2.png)
 #### Step 3
-    ![3](./figs/mac/openZsh/3.png)
+![3](./figs/mac/openZsh/3.png)
 #### Step 4
-    ![4](./figs/mac/openZsh/4.png)
+![4](./figs/mac/openZsh/4.png)
     
 - Type following and hit enter. You may be prompted to enter your password. Note that the `%` symbol, also called a 'Prompt', represents start of the line, so don't type it.
     ```zsh
