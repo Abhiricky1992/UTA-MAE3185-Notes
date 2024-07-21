@@ -10,4 +10,5 @@ Following is a brief list of topics discussed in various notes.
 - [Chapter 3 - The &mu;C and Code Development](./chap03/theMicrocontrollerAndCodeDevelopment.md)
 - [Chapter 4 - General Purpose Input Output](./chap04/gpio.md)
 - [Chapter 5 - Analog to Digital Converter](./chap05/adc.md)
+- [Chapter 6 - Pulse Width Modulation](./chap06/pwm.md)
 - [Appendix A - Software Installation](./appnA/softwareInstallation.md)
