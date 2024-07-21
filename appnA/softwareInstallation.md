@@ -139,27 +139,32 @@ To get Windows to a similar state, a virtual Linux operating system can be insta
   
 #### Step 3
 ![3](./figs/windows/openPowershell/3.png)
+
 #### Step  4
 ![4](./figs/windows/openPowershell/4.png)
 
 - Type `wsl --install`. This will enable and install some software components in Windows. It will also install a Linux distribution called Ubuntu in Windows. Once the installation is finished, you'll receive a message as shown below.
 
-    ![1](./figs/windows/installWSL/1.png)
+  ![1](./figs/windows/installWSL/1.png)
 
 - Close Powershell and restart Windows.
 - A window called 'Ubuntu' should automatically open up after the restart. This window may also be called Terminal, Bash, Command Line, etc. Throughout this book, we'll refer to it as a terminal.
 - Provide desired username and password. Note that the characters you type for the password will not show up. Just type the desired password and then press enter.
-    #### Step 1
-    :name: windowsInit
-    ![1](./figs/windows/ubuntuInit/1.png)
-    #### Step 2
-    ![2](./figs/windows/ubuntuInit/2.png)
-    #### Step 3
-    ![3](./figs/windows/ubuntuInit/3.png)
-    #### Step 4
-    ![4](./figs/windows/ubuntuInit/4.png)
-    #### Step 5
-    ![5](./figs/windows/ubuntuInit/5.png)
+
+#### Step 1
+![1](./figs/windows/ubuntuInit/1.png)
+
+#### Step 2
+![2](./figs/windows/ubuntuInit/2.png)
+    
+#### Step 3
+![3](./figs/windows/ubuntuInit/3.png)
+
+#### Step 4
+![4](./figs/windows/ubuntuInit/4.png)
+
+#### Step 5
+![5](./figs/windows/ubuntuInit/5.png)
 
 - Ubuntu is now installed and setup. You can close the window.
 
