@@ -7,6 +7,7 @@ Before going into further detail, let's first define what base signal should be 
 
 <div id="pwmTermPlot" style="grid-column-start: 1; grid-column-end: 2;"></div>
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="../../_static/jsAnim.js"></script>
 <script src="js/pwmTerm.js"></script>
 
 Following variables define the base signal,
