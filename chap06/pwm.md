@@ -20,6 +20,7 @@ The same PWM channel can be selected on two GPIO pins; the same signal will appe
 ## Sections
 - [Section 1 - Working of a PWM](./sec01/working.md)
 - [Section 2 - `hardware_pwm` Library Functions](./sec02/libraryFunctions.md)
+- [Section 3 - Code Examples](./sec03/codeExamples.md)
 
 # Back to Introduction
 [Back](../README.md)
