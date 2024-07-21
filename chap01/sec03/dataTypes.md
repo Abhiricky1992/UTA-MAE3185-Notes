@@ -12,6 +12,7 @@ The array types and structure types are referred collectively as the aggregate t
 The following table provides the details of standard integer types with their storage sizes and value ranges
 
 **Integer Data Types in C Language**
+
 |    **Type**      | **Storage size** |                    **Value range**                   |
 |:----------------:|:----------------:|:----------------------------------------------------:|
 |      `char`      |      1 byte      |                -128 to 127 or 0 to 255               |
@@ -33,6 +34,7 @@ The following table provide the details of standard floating-point types with st
 
 
 **Floating-Point Data Types in C Language**
+
 |   **Type**    | **Storage size** |     **Value range**    |   **Precision**   |
 |:-------------:|:----------------:|:----------------------:|:-----------------:|
 |    `float`    |      4 byte      |   1.2E-38 to 3.4E+38   |  6 decimal places |
