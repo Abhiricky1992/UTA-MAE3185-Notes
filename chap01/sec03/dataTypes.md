@@ -11,7 +11,7 @@ The array types and structure types are referred collectively as the aggregate t
 ## Integer Types
 The following table provides the details of standard integer types with their storage sizes and value ranges
 
-```{table} Integer Data Types in C Language
+**Integer Data Types in C Language**
 |    **Type**      | **Storage size** |                    **Value range**                   |
 |:----------------:|:----------------:|:----------------------------------------------------:|
 |      `char`      |      1 byte      |                -128 to 127 or 0 to 255               |
@@ -23,20 +23,22 @@ The following table provides the details of standard integer types with their st
 | `unsigned short` |      2 bytes     |                      0 to 65,535                     |
 |      `long`      |      8 bytes     |      -9223372036854775808 to 9223372036854775807     |
 |  `unsigned long` |      8 bytes     |               0 to 18446744073709551615              |
-```
+
 ```{warning}
 The storage size of some of the basic types can be different based on the machine.
 ```
 
 ## Floating-Point Types
 The following table provide the details of standard floating-point types with storage sizes and value ranges and their precision
-```{table} Floating-Point Data Types in C Language
+
+
+**Floating-Point Data Types in C Language**
 |   **Type**    | **Storage size** |     **Value range**    |   **Precision**   |
 |:-------------:|:----------------:|:----------------------:|:-----------------:|
 |    `float`    |      4 byte      |   1.2E-38 to 3.4E+38   |  6 decimal places |
 |    `double`   |      8 byte      |  2.3E-308 to 1.7E+308  | 15 decimal places |
 | `long double` |      10 byte     | 3.4E-4932 to 1.1E+4932 | 19 decimal places |
-```
+
 
 # Back
 [Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
