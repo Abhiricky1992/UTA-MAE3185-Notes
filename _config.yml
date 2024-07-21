@@ -3,6 +3,23 @@ logo: assets/images/UTAlogo.jpg
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+      line_number_start: 1
+      bold_every: 10
+      css: class
+  parse_block_html: true
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
