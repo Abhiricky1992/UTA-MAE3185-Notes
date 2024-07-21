@@ -10,6 +10,7 @@ An operator is a symbol that tells the compiler to perform specific mathematical
 The following table shows all the arithmetic operators supported by the C language. Assume variable A holds 10 and variable B holds 20 then,
 
 **Arithmetic Operators**
+
 | **Operator**   |                        **Description**                       | **Expression**   | **Result** |
 |:--------------:|:-------------------------------------------------------------|:----------------:|:----------:|
 |       `+`      |                      Adds two operands.                      |      `A + B`     |     30     |
