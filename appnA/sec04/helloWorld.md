@@ -4,44 +4,47 @@ This section explains how the software installed so far can be used to compile a
 ## MacOS
 - Create a folder with any name you like on the desktop.
 - Follow the images below to open it in VSCode. The name of the folder in my case is `testCode`.
-    ### Step 1
-    ![1](./figs/mac/openFolderInVSCode/1.png)
-    ### Step 2
-    ![2](./figs/mac/openFolderInVSCode/2.png)
-    ### Step 3
-    ![3](./figs/mac/openFolderInVSCode/3.png)
-    ### Step 4
-    ![4](./figs/mac/openFolderInVSCode/4.png)
-    ### Step 5
-    ![5](./figs/mac/openFolderInVSCode/5.png)
-    ### Step 6
-    ![6](./figs/mac/openFolderInVSCode/6.png)
-    ### Step 7
-    ![7](./figs/mac/openFolderInVSCode/7.png)
+
+### Step 1
+![1](./figs/mac/openFolderInVSCode/1.png)
+### Step 2
+![2](./figs/mac/openFolderInVSCode/2.png)
+### Step 3
+![3](./figs/mac/openFolderInVSCode/3.png)
+### Step 4
+![4](./figs/mac/openFolderInVSCode/4.png)
+### Step 5
+![5](./figs/mac/openFolderInVSCode/5.png)
+### Step 6
+![6](./figs/mac/openFolderInVSCode/6.png)
+### Step 7
+![7](./figs/mac/openFolderInVSCode/7.png)
   
 - Follow the steps for [compiling the code](https://github.com/Abhiricky1992/mae3185Notes/blob/master/appnA/sec04/helloWorld.md#compile-code).
 
 ## Windows/Linux
 - Create a folder with any name you like on the desktop.
 - Follow the images below to open it in VSCode. The name of the folder in my case is `testCode`.
-    ### Step 1
-    ![1](./figs/windows/openFolderInVSCode/1.png)
-    ### Step 2
-    ![2](./figs/windows/openFolderInVSCode/2.png)
-    ### Step 3
-    ![3](./figs/windows/openFolderInVSCode/3.png)
-    ### Step 4
-    ![4](./figs/windows/openFolderInVSCode/4.png)
+
+### Step 1
+![1](./figs/windows/openFolderInVSCode/1.png)
+### Step 2
+![2](./figs/windows/openFolderInVSCode/2.png)
+### Step 3
+![3](./figs/windows/openFolderInVSCode/3.png)
+### Step 4
+![4](./figs/windows/openFolderInVSCode/4.png)
 
 - Press <kbd>⌃&#160;Control</kbd> + <kbd>⇧&#160;Shift</kbd> + <kbd>P</kbd> to open the command palette in VSCode and follow the steps shown in the images below to reopen the folder in WSL. Thus, you'll have access to the 'Arm Toolchain' and 'CMake' from VSCode.
-    ### Step 1
-    ![1](./figs/windows/reopenInWSL/1.png)
-    ### Step 2
-    ![2](./figs/windows/reopenInWSL/2.png)
-    ### Step 3
-    ![3](./figs/windows/reopenInWSL/3.png)
-    ### Step 4
-    ![4](./figs/windows/reopenInWSL/4.png)
+
+  ### Step 1
+  ![1](./figs/windows/reopenInWSL/1.png)
+  ### Step 2
+  ![2](./figs/windows/reopenInWSL/2.png)
+  ### Step 3
+  ![3](./figs/windows/reopenInWSL/3.png)
+  ### Step 4
+  ![4](./figs/windows/reopenInWSL/4.png)
 
 - Follow the steps for [compiling the code](https://github.com/Abhiricky1992/mae3185Notes/blob/master/appnA/sec04/helloWorld.md#compile-code).
 
@@ -49,14 +52,15 @@ This section explains how the software installed so far can be used to compile a
 ## Compile Code
 The steps are independent of the operating system from here on.
 - Create three files with names `helloWorld.c`, `pico_sdk_import.cmake` and `CMakeLists.txt`. Make sure to create these files with correct case, i.e. upper or lower. Following images show steps for creating a file through VSCode.
-    ### Step 1
-    ![1](./figs/compileCode/createFiles/1.png)
-    ### Step 2
-    ![2](./figs/compileCode/createFiles/2.png)
-    ### Step 3
-    ![3](./figs/compileCode/createFiles/3.png)
-    ### Step 4
-    ![4](./figs/compileCode/createFiles/4.png)
+
+### Step 1
+![1](./figs/compileCode/createFiles/1.png)
+### Step 2
+![2](./figs/compileCode/createFiles/2.png)
+### Step 3
+![3](./figs/compileCode/createFiles/3.png)
+### Step 4
+![4](./figs/compileCode/createFiles/4.png)
 
 - Copy following in `helloWorld.c` file and save it. You can use <kbd>⌃&#160;Control</kbd> + <kbd>S</kbd> (Windows) or <kbd>⌘&#160;Command</kbd> + <kbd>S</kbd> (MacOS) to save a file.
     ```c++
@@ -182,22 +186,24 @@ The steps are independent of the operating system from here on.
     target_link_libraries(helloWorld pico_stdlib)
     ```
 - Press <kbd>⌃&#160;Control</kbd> + <kbd>⇧&#160;Shift</kbd> + <kbd>P</kbd> (Windows) or <kbd>⌘&#160;Command</kbd> + <kbd>⇧&#160;Shift</kbd> + <kbd>P</kbd> (MacOS) to open the command palette in VSCode. Follow the steps shown in the images below to configure CMake for this folder.
-    ### Step 1
-    ![1](./figs/compileCode/configureCMake/1.png)
-    ### Step 2
-    ![2](./figs/compileCode/configureCMake/2.png)
-    ### Step 3
-    ![3](./figs/compileCode/configureCMake/3.png)
-    ### Step 4
-    ![4](./figs/compileCode/configureCMake/4.png)
+
+### Step 1
+![1](./figs/compileCode/configureCMake/1.png)
+### Step 2
+![2](./figs/compileCode/configureCMake/2.png)
+### Step 3
+![3](./figs/compileCode/configureCMake/3.png)
+### Step 4
+![4](./figs/compileCode/configureCMake/4.png)
 
 - You will see a <kbd>&#x2699;&#160;Build</kbd> button at the bottom strip and a folder named 'build' once CMake is configured correctly. You can click on the <kbd>&#x2699;&#160;Build</kbd> button to compile the `.c` code. After building completes, the 'build' folder will contain a `.uf2` file if the `.c` code is compiled properly.
-    ### Step 1
-    ![1](./figs/compileCode/buildCode/1.png)
-    ### Step 2
-    ![2](./figs/compileCode/buildCode/2.png)
-    ### Step 3
-    ![3](./figs/compileCode/buildCode/3.png)
+
+### Step 1
+![1](./figs/compileCode/buildCode/1.png)
+### Step 2
+![2](./figs/compileCode/buildCode/2.png)
+### Step 3
+![3](./figs/compileCode/buildCode/3.png)
 
 - Hurray!!! You have compiled your first code for this class.
 ## Back
