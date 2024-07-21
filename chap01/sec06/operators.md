@@ -46,7 +46,7 @@ int main() {
 ## Relational Operators
 The following table shows all the relational operators supported by C. Assume variable A holds 10 and variable B holds 20 then,
 
-**Relational Operators
+**Relational Operators**
 
 | **Operator** |                             **Description**                            | **Example** | **Result** |
 |:------------:|:-----------------------------------------------------------------------|:-----------:|:----------:|
