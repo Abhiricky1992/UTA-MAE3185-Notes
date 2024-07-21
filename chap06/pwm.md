@@ -13,6 +13,10 @@ There are 8 PWM slices, 0 through 7, on the RP2040 &mu;C with two channels, A an
 |      **GPIO**      | **16** | **17** | **18** | **19** | **20** | **21** | **22** | **23** | **24** | **25** | **26** | **27** | **28** | **29** |       |       |
 | **PWM<br>Channel** |   0A   |   0B   |   1A   |   1B   |   2A   |   2B   |   3A   |   3B   |   4A   |   4B   |   5A   |   5B   |   6A   |   6B   |       |       |
 
+
 ```{note}
 The same PWM channel can be selected on two GPIO pins; the same signal will appear on each GPIO.
 ```
+## Sections
+- [Section 1 - PWM](./sec01/working.md)
+
