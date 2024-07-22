@@ -39,6 +39,7 @@ And, the frequency of the output clock is
 $$\begin{equation*}
     f_{div} = \frac{f_{sys}}{\mathtt{DIV}_{\mathtt{i}} + \frac{\mathtt{DIV}_{\mathtt{f}}}{16}}
 \end{equation*}$$
+
 Let's take an example. Following animation show the output signal from the clock divider if the integer part is set to 7 and the fractional part is set to 9. Basically, 7.5625 cycles of the system clock make one cycle of the frequency divided clock.
 
 <div style="display: grid; grid-template-rows: auto 40px;">
