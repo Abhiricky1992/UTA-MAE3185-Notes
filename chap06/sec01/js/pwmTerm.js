@@ -32,7 +32,7 @@ pwmTermPlot.layout = {
         gridcolor: '#505050',
         range: [-0.1, 1.1],
         zeroline: false,
-        tickcolor: '#fff',
+        tickcolor: '#000',
         tickfont: { family: 'Garamond,serif', size: 20, color: '#fff' },
         showgrid: false,
         dtick: 1,
