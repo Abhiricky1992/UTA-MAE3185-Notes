@@ -54,7 +54,7 @@ pwmTermPlot.init = function () {
         showarrow: true,
         arrowhead: 3,
         arrowside: "start+end",
-        arrowcolor: 'white',
+        arrowcolor: 'black',
         ax: 1.35,
         ay: 0.8,
         axref: 'x',
@@ -67,7 +67,7 @@ pwmTermPlot.init = function () {
         yref: 'y',
         showarrow: false,
         text: '$t_H$',//'<i>t<sub>H</sub></i>',
-        font: { family: 'Garamond,serif', size: 30, color: 'white' },
+        font: { family: 'Garamond,serif', size: 30, color: 'black' },
     };
 
     // Draw t_L text
@@ -79,7 +79,7 @@ pwmTermPlot.init = function () {
         showarrow: true,
         arrowhead: 3,
         arrowside: "start+end",
-        arrowcolor: 'white',
+        arrowcolor: 'black',
         ax: 2,
         ay: 0.2,
         axref: 'x',
@@ -92,7 +92,7 @@ pwmTermPlot.init = function () {
         yref: 'y',
         showarrow: false,
         text: '$t_L$',//'<i>t<sub>H</sub></i>',
-        font: { family: 'Garamond,serif', size: 30, color: 'white' },
+        font: { family: 'Garamond,serif', size: 30, color: 'black' },
     };
 
     // Draw p text
@@ -104,7 +104,7 @@ pwmTermPlot.init = function () {
         showarrow: true,
         arrowhead: 3,
         arrowside: "start+end",
-        arrowcolor: 'white',
+        arrowcolor: 'black',
         ax: 2,
         ay: 0.5,
         axref: 'x',
@@ -117,7 +117,7 @@ pwmTermPlot.init = function () {
         yref: 'y',
         showarrow: false,
         text: '$p$',//'<i>t<sub>H</sub></i>',
-        font: { family: 'Garamond,serif', size: 30, color: 'white' },
+        font: { family: 'Garamond,serif', size: 30, color: 'black' },
     };
 
     Plotly.newPlot(this.id, this.data, this.layout, this.config);
