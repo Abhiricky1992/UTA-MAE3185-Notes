@@ -35,6 +35,7 @@ $$\begin{equation*}
 $$
 
 And, the frequency of the output clock is
+
 $$\begin{equation*}
     f_{div} = \frac{f_{sys}}{\mathtt{DIV}_{\mathtt{i}} + \frac{\mathtt{DIV}_{\mathtt{f}}}{16}}
 \end{equation*}$$
