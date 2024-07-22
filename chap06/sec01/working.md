@@ -6,7 +6,7 @@ use_math: true
 Before going into further detail, let's first define what base signal should be generated and repeated by the PWM peripheral. Consider the signal shown in the figure below.
 
 <div id="pwmTermPlot" style="grid-column-start: 1; grid-column-end: 2;"></div>
-<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"</script>
+<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="{{ '/assets/js/jsAnim.js'|relative_url }}"></script>
 <script src="js/pwmTerm.js"></script>
