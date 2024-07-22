@@ -22,9 +22,9 @@ Most of the PWM peripheral implementations allow the configuration of the base s
 - Counter Wrap value, `TOP`
 - Counter Compare value, `CC`
 
-
-**Note:** The terminology might be slightly different in each &mu;C's datasheet although the operation is pretty similar.
-
+<div class="note">
+  The terminology might be slightly different in each &mu;C's datasheet although the operation is pretty similar.
+</div>
 
 ## Clock Divider Value `DIV`
 As discussed previously, every &mu;C relies on a clock signal, referred to as **system clock** in this section, to function correctly. The clock signal frequency for RP2040 is set to 125MHz by default. The Clock Divider in PWM peripheral takes in this high frequency signal and divides it with a certain number to generate a lower frequency signal, referred to as **frequency divided clock** in this section. This number is the `DIV` value that can be specified through software. For RP2040, this value is split into an 8-bit integer part, 1 &leq; `DIV`<sub>`i`</sub> &leq; 255, and a 4-bit fractional part, 0 &leq; `DIV`<sub>`f`</sub> &leq; 15. Thus, the `DIV` value is defined as
