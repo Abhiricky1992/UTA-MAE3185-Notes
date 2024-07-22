@@ -21,6 +21,7 @@ Most of the PWM peripheral implementations allow the configuration of the base s
 - Clock Divider value, `DIV`
 - Counter Wrap value, `TOP`
 - Counter Compare value, `CC`
+
 ```{note}
 The terminology might be slightly different in each &mu;C's datasheet although the operation is pretty similar.
 ```
