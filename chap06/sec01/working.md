@@ -1,7 +1,7 @@
 ---
 use_math: true
 ---
-
+<link rel="stylesheet" type="text/css" href="assets/css/jsAnim.css">
 # Working
 Before going into further detail, let's first define what base signal should be generated and repeated by the PWM peripheral. Consider the signal shown in the figure below.
 
