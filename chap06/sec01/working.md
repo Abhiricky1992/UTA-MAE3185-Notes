@@ -42,6 +42,8 @@ $$\begin{equation*}
 
 Let's take an example. Following animation show the output signal from the clock divider if the integer part is set to 7 and the fractional part is set to 9. Basically, 7.5625 cycles of the system clock make one cycle of the frequency divided clock.
 
+
+<script src="js/clkDiv.js"></script>
 <div style="display: grid; grid-template-rows: auto 40px;">
     <div style="display: grid; grid-template-columns: 1fr 0.3fr 1fr;">
         <div id="clkDivSysClk" style="grid-column-start: 1; grid-column-end: 2;"></div>
@@ -55,7 +57,7 @@ Let's take an example. Following animation show the output signal from the clock
         <button onClick="clkDivAnim.increaseAnimUpdateDt()" class="js-anim">&#x23E9;</button>
     </div>
 </div>
-<script src="js/clkDiv.js"></script>
+
 
 
 ## Counter Wrap Value `TOP`
