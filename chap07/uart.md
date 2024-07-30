@@ -4,3 +4,8 @@ UART, or universal asynchronous receiver-transmitter, is one of the most used de
 The RP2040 has two independent UART instances, `uart0` and `uart1`. Note that the **TX** and **RX** in that table correspond to Transmit and Receive functions. While, the **RTS** and **CTS** are called Output Flow Control and Input Flow Controlled respectively, which are not going to be discussed and used here. The connection for UART communication between two devices can be set up as shown below. The important thing to remember here is that the **TX** pin of one device is always connected to the **RX** pin of the second device.
 
 
+<p align="center">
+<img src="./figs/connectionComp.svg" />
+</p>
+<p align="center">
+</p>
