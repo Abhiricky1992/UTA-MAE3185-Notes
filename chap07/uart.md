@@ -9,3 +9,9 @@ The RP2040 has two independent UART instances, `uart0` and `uart1`. Note that th
 </p>
 <p align="center">
 </p>
+
+
+## Sections
+- [Section 1 - Working of a UART](./sec01/working.md)
+- [Section 2 - `hardware_gpio` Library Functions](sec02/libraryFunctions.md)
+- [Section 3 - Code Examples](sec03/codeExamples.md)
