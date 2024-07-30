@@ -11,4 +11,5 @@ Following is a brief list of topics discussed in various notes.
 - [Chapter 4 - General Purpose Input Output](./chap04/gpio.md)
 - [Chapter 5 - Analog to Digital Converter](./chap05/adc.md)
 - [Chapter 6 - Pulse Width Modulation](./chap06/pwm.md)
+- [Chapter 7 -  Universal Asynchronous Receiver / Transmitter](./chap07/uart.md)
 - [Appendix A - Software Installation](./appnA/softwareInstallation.md)
