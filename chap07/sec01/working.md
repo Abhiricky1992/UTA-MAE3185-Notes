@@ -15,7 +15,7 @@ Each UART packet contains a start bit, 5-9 data bits, an optional parity bit and
 <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="{{ '/assets/js/jsAnim.js'|relative_url }}"></script>
-<script src="{{ '/assets/css/jsAnim.css'|relative_url }}"></script>
+
 
 - **Start Bit:** The voltage in the wire, connecting a TX pin to an RX pin, is held `HIGH` by the TX pin when there is no communication happening. To indicate the start of data transfer, the voltage in the wire is pulled to `LOW`. When the RX pin detects this change, it starts reading the voltage values.
 - **Data Bits:** These bits are the actual information being transmitted. Based on what each bit is, i.e. `0` or `1`, the voltage in the wire is maintained to 0V or 3.3V for a certain period of time for each bit. There can be 5 to 9 data bits in a packet. And, in most cases, the least significant bit (LSB) is transmitted first.
