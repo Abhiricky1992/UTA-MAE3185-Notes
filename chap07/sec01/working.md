@@ -12,7 +12,10 @@ Each UART packet contains a start bit, 5-9 data bits, an optional parity bit and
     <div style="grid-row: 1 / 2; grid-column: 11 / 12; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">0 or 1<br>Parity<br>bits</div>
     <div style="grid-row: 1 / 2; grid-column: 12 / 14; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">1 or 2<br>Stop bits</div>
 </div>
-
+<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="{{ '/assets/js/jsAnim.js'|relative_url }}"></script>
+<script src="{{ '/assets/css/jsAnim.css'|relative_url }}"></script>
 
 - **Start Bit:** The voltage in the wire, connecting a TX pin to an RX pin, is held `HIGH` by the TX pin when there is no communication happening. To indicate the start of data transfer, the voltage in the wire is pulled to `LOW`. When the RX pin detects this change, it starts reading the voltage values.
 - **Data Bits:** These bits are the actual information being transmitted. Based on what each bit is, i.e. `0` or `1`, the voltage in the wire is maintained to 0V or 3.3V for a certain period of time for each bit. There can be 5 to 9 data bits in a packet. And, in most cases, the least significant bit (LSB) is transmitted first.
@@ -36,9 +39,7 @@ Now that we understand how a UART packet is defined, let's take a look at an exa
     <div style="grid-column: 3 / 4; grid-row: 1 / 4; padding: 20px; border: 5px solid #F58025; border-radius: 30px; justify-self: center; align-self: center; vertical-align: middle; font-size: xx-large; font-weight: bold; color: #F58025;">RX</div>
     <div id="uartSignalSigPlot" style="grid-column: 1 / 4; grid-row: 4 / 5; justify-self:center; align-self:first baseline; width: 100%; border: 2px solid whitesmoke; border-radius: 10px;"></div>
 </div>
-<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="{{ '/assets/js/jsAnim.js'|relative_url }}"></script>
+
 <script src="js/uartSignal.js"></script>
 
 
