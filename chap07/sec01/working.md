@@ -6,17 +6,15 @@ UART operates in a similar fashion. It defines how the bits of information shoul
 ## UART Packet
 Each UART packet contains a start bit, 5-9 data bits, an optional parity bit and 1 or 2 stop bits.
 
-<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="{{ '/assets/js/jsAnim.js'|relative_url }}"></script>
-<div class = "js-anim">
+
+
 <div style="display: grid; grid-template-columns: repeat(13, 1fr);">
     <div style="grid-row: 1 / 2; grid-column: 1 / 2; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">Start<br>bit</div>
     <div style="grid-row: 1 / 2; grid-column: 2 / 11; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">5 - 9<br>Data bits</div>
     <div style="grid-row: 1 / 2; grid-column: 11 / 12; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">0 or 1<br>Parity<br>bits</div>
     <div style="grid-row: 1 / 2; grid-column: 12 / 14; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">1 or 2<br>Stop bits</div>
 </div>
-</div>
+
 
 
 
@@ -28,6 +26,8 @@ Each UART packet contains a start bit, 5-9 data bits, an optional parity bit and
 Note that there can be many versions of a UART packet since the total number of bits in a packet is not fixed. Thus, both the devices communicating through UART must know the packet configuration in advance. The UART packet configuration is generally defined by three values as: `<nDataBits><nParityBits><nStopBits>`. For example, the 8N1 configuration means that the packet would contain 8 data bits, no parity bit and 1 stop bit. The 8N1 configuration is the most commonly used packet configuration.
 
 Now that we understand how a UART packet is defined, let's take a look at an example. Following diagram shows a TX and an RX pin of two devices. The black line between them represents the voltage in the wire. The voltage in the wire over time is shown in the graph below. The text box allows you to enter a character, which is converted to a binary number as per the [ASCII encoding](https://en.wikipedia.org/wiki/ASCII). This binary number is transmitted through a UART packet with 8N1 configuration.
+
+
 
 <div style="display: grid; grid-template-columns: 2fr 8fr 2fr; grid-template-rows: 1fr 1fr 1fr 4fr;">
     <div style="grid-column: 1 / 2; grid-row: 1 / 4; padding: 20px; border: 5px solid #0064B1; border-radius: 30px; justify-self: center; align-self: center; vertical-align: middle; font-size: xx-large; font-weight: bold; color: #0064B1;">TX</div>
@@ -42,7 +42,9 @@ Now that we understand how a UART packet is defined, let's take a look at an exa
     <div style="grid-column: 3 / 4; grid-row: 1 / 4; padding: 20px; border: 5px solid #F58025; border-radius: 30px; justify-self: center; align-self: center; vertical-align: middle; font-size: xx-large; font-weight: bold; color: #F58025;">RX</div>
     <div id="uartSignalSigPlot" style="grid-column: 1 / 4; grid-row: 4 / 5; justify-self:center; align-self:first baseline; width: 100%; border: 2px solid whitesmoke; border-radius: 10px;"></div>
 </div>
-
+<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="{{ '/assets/js/jsAnim.js'|relative_url }}"></script>
 <script src="js/uartSignal.js"></script>
 
 
