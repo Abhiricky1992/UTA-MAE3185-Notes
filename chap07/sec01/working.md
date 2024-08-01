@@ -6,6 +6,9 @@ UART operates in a similar fashion. It defines how the bits of information shoul
 ## UART Packet
 Each UART packet contains a start bit, 5-9 data bits, an optional parity bit and 1 or 2 stop bits.
 
+<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="{{ '/assets/js/jsAnim.js'|relative_url }}"></script>
 <div class = "js-anim">
 <div style="display: grid; grid-template-columns: repeat(13, 1fr);">
     <div style="grid-row: 1 / 2; grid-column: 1 / 2; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">Start<br>bit</div>
@@ -14,9 +17,7 @@ Each UART packet contains a start bit, 5-9 data bits, an optional parity bit and
     <div style="grid-row: 1 / 2; grid-column: 12 / 14; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">1 or 2<br>Stop bits</div>
 </div>
 </div>
-<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="{{ '/assets/js/jsAnim.js'|relative_url }}"></script>
+
 
 
 - **Start Bit:** The voltage in the wire, connecting a TX pin to an RX pin, is held `HIGH` by the TX pin when there is no communication happening. To indicate the start of data transfer, the voltage in the wire is pulled to `LOW`. When the RX pin detects this change, it starts reading the voltage values.
