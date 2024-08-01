@@ -9,7 +9,6 @@ Before going into further detail, let's first define what base signal should be 
 <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="{{ '/assets/js/jsAnim.js'|relative_url }}"></script>
-<script src="{{ '/assets/css/jsAnim.css'|relative_url }}"></script>
 <script src="js/pwmTerm.js"></script>
 
 Following variables define the base signal,
