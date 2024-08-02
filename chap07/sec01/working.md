@@ -6,6 +6,7 @@ UART operates in a similar fashion. It defines how the bits of information shoul
 ## UART Packet
 Each UART packet contains a start bit, 5-9 data bits, an optional parity bit and 1 or 2 stop bits.
 
+<div class="js-anim">
 <div style="display: grid; grid-template-columns: repeat(13, 1fr);">
 <div style="grid-row: 1 / 2; grid-column: 1 / 2; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">Start<br>bit
 </div>
@@ -14,6 +15,7 @@ Each UART packet contains a start bit, 5-9 data bits, an optional parity bit and
 <div style="grid-row: 1 / 2; grid-column: 11 / 12; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">0 or 1<br>Parity<br>bits
 </div>
 <div style="grid-row: 1 / 2; grid-column: 12 / 14; width: 100%; height: 100%; border: 5px solid; border-radius: 10px; justify-self: center; align-self: center; text-align: center; vertical-align: middle;">1 or 2<br>Stop bits
+</div>
 </div>
 </div>
 
