@@ -54,7 +54,7 @@ Now that we understand how a UART packet is defined, let's take a look at an exa
 
 ## Baud Rate
 Note that so far in our discussion of UART protocol, we have not discussed when the RX pin should measure the voltage of the wire. As mentioned previously, UART is an asynchronous protocol, thus there is no clock signal instructing a device of when to measure the voltage. This issue is resolved by defining a Baud Rate, which specifies how many bits should be transferred per second. In other words, it defines the length of time for which the voltage corresponding to one bit will be maintained in the wire. Thus, the RX pin starts measuring wire voltage with a predefined time interval once it receives a start bit, i.e. once the wire voltage switches from `HIGH` to `LOW`. Following table lists the most commonly used baud rates, bit duration and the corresponding data rates for 8N1 configuration of the packet.
-```{table}
+
 | Baud Rate (bits/s) | Bit Duration (&mu;s) | Data Rate (bits/s) |
 | :----------------: | :------------------: | :----------------: |
 |        9600        |       104.167        |        7680        |
@@ -62,5 +62,5 @@ Note that so far in our discussion of UART protocol, we have not discussed when 
 |       38400        |        26.042        |       30720        |
 |       57600        |        17.361        |       46080        |
 |       115200       |        8.681         |       92160        |
-```
+
 Calculation of the data rate in the table above is quite straight forward. For 8N1 configuration, a packet contains 10 bits in total. Out of which, only 8 bits are data bits. Thus, there is only 8 bits of information transferred per 10 bits of transmission. Thus, if the baud rate was 9600 bits/s then the data rate would be 9600*0.8 = 7680 bits/s.
