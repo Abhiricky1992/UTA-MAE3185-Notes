@@ -46,17 +46,17 @@ Let's take an example. Following animation show the output signal from the clock
 
 <script src="js/clkDiv.js"></script>
 <div style="display: grid; grid-template-rows: auto 40px;">
-    <div style="display: grid; grid-template-columns: 1fr 0.3fr 1fr;">
-        <div id="clkDivSysClk" style="grid-column-start: 1; grid-column-end: 2;"></div>
-        <div id="clkDivClkDiv" style="grid-column-start: 2; grid-column-end: 3; background: rgba(245, 126, 36, 0.6); border: 5px solid rgba(245, 126, 36, 1); border-radius: 20px; text-align: center; color: white; font-family: serif; font-size: 24px; vertical-align: middle; justify-self: center; align-self: center;">Clock<br>Divider<br>7<sup>9</sup>&frasl;<sub>16</sub></div>
-        <div id="clkDivDivClk" style="grid-column-start: 3; grid-column-end: 4;"></div>
-    </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr">
-        <button onClick="clkDivAnim.decreaseAnimUpdateDt()" class="js-anim">&#x23EA;</button>
-        <button onClick="clkDivAnim.playPauseAnim()" class="js-anim">&#x23EF;</button>
-        <button onClick="clkDivAnim.callResetFuns()" class="js-anim">&#x1F504;</button>
-        <button onClick="clkDivAnim.increaseAnimUpdateDt()" class="js-anim">&#x23E9;</button>
-    </div>
+<div style="display: grid; grid-template-columns: 1fr 0.3fr 1fr;">
+<div id="clkDivSysClk" style="grid-column-start: 1; grid-column-end: 2;"></div>
+<div id="clkDivClkDiv" style="grid-column-start: 2; grid-column-end: 3; background: rgba(245, 126, 36, 0.6); border: 5px solid rgba(245, 126, 36, 1); border-radius: 20px; text-align: center; color: white; font-family: serif; font-size: 24px; vertical-align: middle; justify-self: center; align-self: center;">Clock<br>Divider<br>7<sup>9</sup>&frasl;<sub>16</sub></div>
+<div id="clkDivDivClk" style="grid-column-start: 3; grid-column-end: 4;"></div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr">
+<button onClick="clkDivAnim.decreaseAnimUpdateDt()" class="js-anim">&#x23EA;</button>
+<button onClick="clkDivAnim.playPauseAnim()" class="js-anim">&#x23EF;</button>
+<button onClick="clkDivAnim.callResetFuns()" class="js-anim">&#x1F504;</button>
+<button onClick="clkDivAnim.increaseAnimUpdateDt()" class="js-anim">&#x23E9;</button>
+</div>
 </div>
 --->
 
