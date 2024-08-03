@@ -31,20 +31,27 @@ Note that there can be many versions of a UART packet since the total number of 
 Now that we understand how a UART packet is defined, let's take a look at an example. Following diagram shows a TX and an RX pin of two devices. The black line between them represents the voltage in the wire. The voltage in the wire over time is shown in the graph below. The text box allows you to enter a character, which is converted to a binary number as per the [ASCII encoding](https://en.wikipedia.org/wiki/ASCII). This binary number is transmitted through a UART packet with 8N1 configuration.
 
 
-
+<div class="js-anim">
 <div style="display: grid; grid-template-columns: 2fr 8fr 2fr; grid-template-rows: 1fr 1fr 1fr 4fr;">
 <div style="grid-column: 1 / 2; grid-row: 1 / 4; padding: 20px; border: 5px solid #0064B1; border-radius: 30px; justify-self: center; align-self: center; vertical-align: middle; font-size: xx-large; font-weight: bold; color: #0064B1;">TX
 </div>
 <div style="display: grid; grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr; grid-column: 2 / 3; grid-row: 1 / 2; justify-self: center; align-self: center; vertical-align: middle; justify-items: space-evenly;">
 <input id="uartSignalSig" type="text" class="js-anim" maxlength="1" size="8" onchange="uartSignalSig.handleChange()">
-<div style="justify-self: center; align-self: center;">&rArr;</div>
-<div id="uartSignalSigToAscii" style="justify-self: center; align-self: center;"></div>
-<div style="justify-self: center; align-self: center;">&rArr;</div>
+<div style="justify-self: center; align-self: center;">&rArr;
+</div>
+<div id="uartSignalSigToAscii" style="justify-self: center; align-self: center;">
+</div>
+<div style="justify-self: center; align-self: center;">&rArr;
+</div>
 <div id="uartSignalSigToBin" style="justify-self: center; align-self: center;"></div>
 </div>
-<div id="uartSignalWire" style="grid-column: 2 / 3; grid-row: 2 / 3; width: 100%; height: 5px; background-color: #f5f5f5; justify-self: center; align-self: center;"></div>
-<div style="grid-column: 3 / 4; grid-row: 1 / 4; padding: 20px; border: 5px solid #F58025; border-radius: 30px; justify-self: center; align-self: center; vertical-align: middle; font-size: xx-large; font-weight: bold; color: #F58025;">RX</div>
-<div id="uartSignalSigPlot" style="grid-column: 1 / 4; grid-row: 4 / 5; justify-self:center; align-self:first baseline; width: 100%; border: 2px solid whitesmoke; border-radius: 10px;"></div>
+<div id="uartSignalWire" style="grid-column: 2 / 3; grid-row: 2 / 3; width: 100%; height: 5px; background-color: #f5f5f5; justify-self: center; align-self: center;">
+</div>
+<div style="grid-column: 3 / 4; grid-row: 1 / 4; padding: 20px; border: 5px solid #F58025; border-radius: 30px; justify-self: center; align-self: center; vertical-align: middle; font-size: xx-large; font-weight: bold; color: #F58025;">RX
+</div>
+<div id="uartSignalSigPlot" style="grid-column: 1 / 4; grid-row: 4 / 5; justify-self:center; align-self:first baseline; width: 100%; border: 2px solid whitesmoke; border-radius: 10px;">
+</div>
+</div>
 </div>
 <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
