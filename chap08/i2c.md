@@ -11,10 +11,10 @@ I<sup>2</sup>C Connection Diagram
 The two wires, clock and data lines, are called **SCL** (Serial Clock) and **SDA** (Serial Data) respectively. Note that the two lines are connected to V<sub>dd</sub>, 3.3V in case of RP2040, through a resistor. This represents the Pull-Up configuration that we discussed in Chapter 4. In the idle state, i.e. when no communication is happening, pins of all devices connected SCL and SDA are in Input configuration. Thus, the pull-up resistors keep the voltage in SCL and SDA lines high. Moreover, these pins change the configuration between Input and Output based on whether a device is supposed to control the line voltage or not at a given moment. This process is discussed in further detail in the next section.
 
 The RP2040 has two independent I<sup>2</sup>C instances, `i2c0` and `i2c1`. Each instance can be connected to multiple GPIOs with a specific function, SCL or SDA, as given in the [Pinout Diagram](../Pico-R3-A4-Pinout.pdf). The external physical pull-up resistors are not needed here since the internal pull-up configuration for the &mu;C can be set up through software. However, if no device communicating through I<sup>2</sup>C have pins with internal pull-up configuration then the physical pull-up resistors are necessary. In any case, the wiring for I<sup>2</sup>C communication with the &mu;C can be done as shown below,
-```{figure} ./figs/connectionComp.svg
----
-class: p-2
----
-```
-```{tableofcontents}
+
+<p align="center">
+<img width="100%" src = "./figs/connectionComp.svg">
+I<sup>2</sup>C Connection Components
+</p>
+
 ```
