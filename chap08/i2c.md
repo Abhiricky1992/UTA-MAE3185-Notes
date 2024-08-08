@@ -14,7 +14,7 @@ The RP2040 has two independent I<sup>2</sup>C instances, `i2c0` and `i2c1`. Each
 
 <p align="center">
 <img width="100%" src = "./figs/connectionComp.svg">
-I<sup>2</sup>C Connection Components
+I<sup>2</sup>C Connection in Raspi Pico
 </p>
 
 ```
