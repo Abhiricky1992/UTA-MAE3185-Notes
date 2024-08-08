@@ -17,7 +17,6 @@ The RP2040 has two independent I<sup>2</sup>C instances, `i2c0` and `i2c1`. Each
 I<sup>2</sup>C Connection in Raspi Pico
 </p>
 
-```
 ## Sections
 - [Section 1 - Working of a I<sup>2</sup>C](./sec01/working.md)
 - [Section 2 - `hardware_i2c` Library Functions](sec02/libraryFunctions.md)
