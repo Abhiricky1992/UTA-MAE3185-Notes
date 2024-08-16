@@ -117,34 +117,41 @@ The `TOP` value is a 16-bit number, i.e. 0 &leq; `TOP` &leq; 65535.
 ## Counter Compare Value `CC`
 Now that the time period of the base signal is defined, all that is remaining is to define for how long the signal will be `HIGH` or `LOW`. This is done using the counter compare value. The GPIO, that is being controlled by the PWM peripheral, is set to `HIGH` when the `CTR` value starts increasing from 0. This `HIGH` state is maintained until the `CTR` value becomes equal to the `CC` value. The GPIO is set to `LOW` when this happens. 
 
-<!---
+<div class="js-anim">
 <div style="display: grid; grid-template-rows: auto 40px;">
-    <div style="display: grid; grid-template-columns: 0.4fr 1fr;">
-        <div style="display: grid; grid-template-rows: auto auto auto; justify-self: center; align-self: center;">
-            <div style="display: grid; grid-template-rows: auto auto; justify-items: center; align-items: center; justify-self: center; align-self: center; vertical-align: middle;">
-                <label for="ctrCmpCcReg" class="js-anim"><span style="font-family: 'Courier New', Courier, monospace; color: white">CC</span></label>
-                <input type="text" class="js-anim" id="ctrCmpCcReg" minlength="1" maxlength="5" value="3" size="5" disabled>
-            </div><br>
-            <div style="display: grid; grid-template-rows: auto auto; justify-items: center; align-items: center; justify-self: center; align-self: center; vertical-align: middle;">
-                <label for="ctrCmpCtrReg" class="js-anim"><span style="font-family: 'Courier New', Courier, monospace; color: white">CTR</span></label>
-                <input type="text" class="js-anim" id="ctrCmpCtrReg" minlength="1" maxlength="5" value="0" size="5" disabled>
-            </div><br>
-            <div style="display: grid; grid-template-rows: auto auto; justify-items: center; align-items: center; justify-self: center; align-self: center; vertical-align: middle;">
-                <label for="ctrCmpTopReg" class="js-anim"><span style="font-family: 'Courier New', Courier, monospace; color: white">TOP</span></label>
-                <input type="text" class="js-anim" id="ctrCmpTopReg" minlength="1" maxlength="5" value="9" size="5" disabled>
-            </div>
-        </div>
-        <div id="ctrCmpPwmOut"></div>
-    </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr">
-        <button onClick="ctrCmpAnim.decreaseAnimUpdateDt()" class="js-anim">&#x23EA;</button>
-        <button onClick="ctrCmpAnim.playPauseAnim()" class="js-anim">&#x23EF;</button>
-        <button onClick="ctrCmpAnim.callResetFuns()" class="js-anim">&#x1F504;</button>
-        <button onClick="ctrCmpAnim.increaseAnimUpdateDt()" class="js-anim">&#x23E9;</button>
-    </div>
+<div style="display: grid; grid-template-columns: 0.4fr 1fr;">
+<div style="display: grid; grid-template-rows: auto auto auto; justify-self: center; align-self: center;">
+<div style="display: grid; grid-template-rows: auto auto; justify-items: center; align-items: center; justify-self: center; align-self: center; vertical-align: middle;">
+<label for="ctrCmpCcReg" class="js-anim"><span style="font-family: 'Courier New', Courier, monospace; color: white">CC
+</span>
+</label>
+<input type="text" class="js-anim" id="ctrCmpCcReg" minlength="1" maxlength="5" value="3" size="5" disabled>
+</div><br>
+<div style="display: grid; grid-template-rows: auto auto; justify-items: center; align-items: center; justify-self: center; align-self: center; vertical-align: middle;">
+<label for="ctrCmpCtrReg" class="js-anim"><span style="font-family: 'Courier New', Courier, monospace; color: white">CTR
+</span>
+</label>
+<input type="text" class="js-anim" id="ctrCmpCtrReg" minlength="1" maxlength="5" value="0" size="5" disabled>
+</div><br>
+<div style="display: grid; grid-template-rows: auto auto; justify-items: center; align-items: center; justify-self: center; align-self: center; vertical-align: middle;">
+<label for="ctrCmpTopReg" class="js-anim"><span style="font-family: 'Courier New', Courier, monospace; color: white">TOP
+</span>
+</label>
+<input type="text" class="js-anim" id="ctrCmpTopReg" minlength="1" maxlength="5" value="9" size="5" disabled>
+</div>
+</div>
+<div id="ctrCmpPwmOut"></div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr">
+<button onClick="ctrCmpAnim.decreaseAnimUpdateDt()" class="js-anim">&#x23EA;</button>
+<button onClick="ctrCmpAnim.playPauseAnim()" class="js-anim">&#x23EF;</button>
+<button onClick="ctrCmpAnim.callResetFuns()" class="js-anim">&#x1F504;</button>
+<button onClick="ctrCmpAnim.increaseAnimUpdateDt()" class="js-anim">&#x23E9;</button>
+</div>
+</div>
 </div>
 <script src="js/ctrCmp.js"></script>
---->
+
 This defines both the duty cycle, $D$, and the `HIGH` time, $t_H$, of the base signal as given below
 
 $$\begin{gather*}
