@@ -40,4 +40,6 @@ Configure the counter compare value.
 ## `pwm_set_enabled(uint8_t sliceNum, bool enabled)`
 Enable or disable the PWM output.
 - Function input `sliceNum` is the PWM slice number that you want to enable or disable.
-- Function input `enabled` must be a boolean value, i.e. `0` to disable the output and `1` to enable the output. 
+- Function input `enabled` must be a boolean value, i.e. `0` to disable the output and `1` to enable the output.
+# Back
+[Back to Chapter 5](../pwm.md)
