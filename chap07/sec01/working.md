@@ -41,11 +41,13 @@ Now that we understand how a UART packet is defined, let's take a look at an exa
 </div>
 <div style="display: grid; grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr; grid-column: 2 / 3; grid-row: 1 / 2; justify-self: center; align-self: center; vertical-align: middle; justify-items: space-evenly;">
 <input id="uartSignalSig" type="text" class="js-anim" maxlength="1" size="8" onchange="uartSignalSig.handleChange()">
-<div style="justify-self: center; align-self: center;">&rArr;
+<div style="justify-self: center; align-self: center;">&<span style="color: white">rArr;
+</span>
 </div>
 <div id="uartSignalSigToAscii" style="justify-self: center; align-self: center;">
 </div>
-<div style="justify-self: center; align-self: center;">&rArr;
+<div style="justify-self: center; align-self: center;"><span style="color: white">&rArr;
+</span>
 </div>
 <div id="uartSignalSigToBin" style="justify-self: center; align-self: center;"></div>
 </div>
