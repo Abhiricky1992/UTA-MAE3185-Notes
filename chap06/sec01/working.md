@@ -159,7 +159,7 @@ D = \frac{\mathtt{CC}}{\mathtt{TOP} + 1} \cdot 100\% \\
 t_H = \frac{\mathtt{CC}}{f_{sys}} \cdot \mathtt{DIV}
 \end{gather*}$$
 
-The `CC` value is also a 16-bit number, i.e. 0 &leq; `CC` &leq; 65535. Also note that if `CC` is 0 then the PWM output is always `LOW` and if `CC` &gt; `TOP` then the PWM output is always `HIGH`.
+The `CC` value is also a 16-bit number, i.e. $0 \leq$ `CC` $\leq 65535$. Also note that if `CC` is 0 then the PWM output is always `LOW` and if `CC` &gt; `TOP` then the PWM output is always `HIGH`.
 
 # Back
 [Back to Chapter 5](../pwm.md)
