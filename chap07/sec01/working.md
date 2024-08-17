@@ -37,7 +37,7 @@ Now that we understand how a UART packet is defined, let's take a look at an exa
 
 <div class="js-anim">
 <div style="display: grid; grid-template-columns: 2fr 8fr 2fr; grid-template-rows: 1fr 1fr 1fr 4fr;">
-<div style="grid-column: 1 / 2; grid-row: 1 / 4; padding: 20px; border: 5px solid #0064B1; border-radius: 30px; justify-self: center; align-self: center; vertical-align: middle; font-size: xx-large; font-weight: bold; color: #0064B1;"><span style="color: white"></span>
+<div style="grid-column: 1 / 2; grid-row: 1 / 4; padding: 20px; border: 5px solid #0064B1; border-radius: 30px; justify-self: center; align-self: center; vertical-align: middle; font-size: xx-large; font-weight: bold; color: #0064B1;"><span style="color: white">TX</span>
 </div>
 <div style="display: grid; grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr; grid-column: 2 / 3; grid-row: 1 / 2; justify-self: center; align-self: center; vertical-align: middle; justify-items: space-evenly;">
 <input id="uartSignalSig" type="text" class="js-anim" maxlength="1" size="8" onchange="uartSignalSig.handleChange()">
