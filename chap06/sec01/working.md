@@ -112,7 +112,7 @@ $$\begin{equation*}
 p = \frac{\mathtt{TOP} + 1}{f_{div}}
 \end{equation*}$$
 
-The `TOP` value is a 16-bit number, i.e. 0 &leq; `TOP` &leq; 65535.
+The `TOP` value is a 16-bit number, i.e. 0 $\leq$ `TOP` $\leq$ 65535.
 
 ## Counter Compare Value `CC`
 Now that the time period of the base signal is defined, all that is remaining is to define for how long the signal will be `HIGH` or `LOW`. This is done using the counter compare value. The GPIO, that is being controlled by the PWM peripheral, is set to `HIGH` when the `CTR` value starts increasing from 0. This `HIGH` state is maintained until the `CTR` value becomes equal to the `CC` value. The GPIO is set to `LOW` when this happens. 
