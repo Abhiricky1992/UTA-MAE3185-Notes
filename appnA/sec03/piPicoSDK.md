@@ -12,5 +12,5 @@ This SDK (Software Development Kit) contains a large collection of libraries and
   # Next
 - [Hello World](../sec04/helloWorld.md)
   # Back
-  - [Text Editor](../sec02/textEditor.md#text-editor)
+- [Text Editor](../sec02/textEditor.md#text-editor)
   
