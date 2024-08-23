@@ -207,4 +207,4 @@ The steps are independent of the operating system from here on.
 
 - Hurray!!! You have compiled your first code for this class.
 ## Back
-= [Back to Software Installation](../softwareInstallation.md#next-steps)
+- [Raspberry Pi C/C++ SDK](../sec03/piPicoSDK.md)
