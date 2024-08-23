@@ -169,13 +169,11 @@ To get Windows to a similar state, a virtual Linux operating system can be insta
 - Ubuntu is now installed and setup. You can close the window.
 
 
-## Next Steps
+## Next 
 The software necessary to develop the C/C++ code for the microcontroller can be installed now. Instructions for installing this software for Raspberry Pi Pico can be found in its [Getting Started](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf) guide. Upcoming sections provide a more detailed version of the same.
 
 - [Arm Toolchain](./sec01/armToolchain.md)
-- [Text Editor](./sec02/textEditor.md#text-editor)
-- [Raspberry Pi Pico C/C++ SDK](./sec03/piPicoSDK.md)
-- [Hello World](./sec04/helloWorld.md)
+
 
 ## Back to Introduction
 [Back](../intro.md)
