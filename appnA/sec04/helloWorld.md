@@ -207,6 +207,6 @@ The steps are independent of the operating system from here on.
 
 - First code compilation done!!!
 ## Next
--[Chapter 1](../chap01/summaryOfBasicCCppProgramming.md)
+-[Chapter 1](../../chap01/summaryOfBasicCCppProgramming.md)
 ## Back
 - [Raspberry Pi C/C++ SDK](../sec03/piPicoSDK.md)
