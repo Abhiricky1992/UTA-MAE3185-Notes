@@ -64,5 +64,7 @@ A toolchain is a set of programming tools, like a compiler, linker, debugger, et
     $ sudo apt upgrade
     $ sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
     ```
+## Next
+- [Text Editor](./sec02/textEditor.md#text-editor)
 ## Back
 - [Back to Software Installation](../softwareInstallation.md#next-steps)
