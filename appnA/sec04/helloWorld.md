@@ -205,6 +205,8 @@ The steps are independent of the operating system from here on.
 ### Step 3
 ![3](./figs/compileCode/buildCode/3.png)
 
-- Hurray!!! You have compiled your first code for this class.
+- First code compilation done!!!
+## Next
+-[Chapter 1](../chap01/summaryOfBasicCCppProgramming.md)
 ## Back
 - [Raspberry Pi C/C++ SDK](../sec03/piPicoSDK.md)
