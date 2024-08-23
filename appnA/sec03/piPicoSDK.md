@@ -9,6 +9,8 @@ This SDK (Software Development Kit) contains a large collection of libraries and
     $ cd pico-sdk
     $ git submodule update --init
     ```
+  # Next
+- [Hello World](../sec04/helloWorld.md)
   # Back
-  - [Back to software installation](../softwareInstallation.md#next-steps)
+  - [Text Editor](../sec02/textEditor.md#text-editor)
   
