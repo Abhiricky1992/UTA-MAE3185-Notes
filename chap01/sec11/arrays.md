@@ -105,6 +105,10 @@ double arrayMean(unsigned int arr[], const unsigned int size);	// Function decla
 ```
 Another way of passing arrays to functions is by using Pointers, which will not be discussed here.
 
+# Back
+
+[Strings](../sec12/strings.md)
 
 # Back
-[Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
+
+[Scope Rules](../sec10/scopeRules.md)
