@@ -105,6 +105,10 @@ int main () {
    return 0;
 }
 ```
+# Next
+
+[Loops](../sec07/loops.md)
 
 # Back
-[Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
+
+[Operators](../sec06/operators.md)
