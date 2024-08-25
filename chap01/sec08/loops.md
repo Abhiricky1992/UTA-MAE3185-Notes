@@ -102,5 +102,10 @@ int main () {
 ```
 When the conditional expression is absent, it is assumed to be `true`. You can achieve the same result with `while (true)`.
 
+# Next 
+
+[Functions](../sec09/functions.md)
+
 # Back
-[Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
+
+[Decision Making](../sec07/decisionMaking.md)
