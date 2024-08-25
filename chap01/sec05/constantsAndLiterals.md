@@ -87,4 +87,9 @@ int main()
 }
 ```
 # Back
-[Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
+
+[Operators](../sec06/operators.md)
+
+# Back
+
+[Variables](../sec04/variables.md)
