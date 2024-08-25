@@ -105,7 +105,7 @@ double arrayMean(unsigned int arr[], const unsigned int size);	// Function decla
 ```
 Another way of passing arrays to functions is by using Pointers, which will not be discussed here.
 
-# Back
+# Next
 
 [Strings](../sec12/strings.md)
 
