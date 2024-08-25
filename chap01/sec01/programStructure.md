@@ -28,6 +28,9 @@ Let us take a look at the various parts of the above program,
 - The next line `printf(...)` is another function available in C which causes the message "Hello, World!" to be displayed on the screen.
 - The next line `return 0;` terminates the main() function and returns the value 0.
 
+# Next
+[Basic Syntax](../sec02/basicSyntax.md)
+
 # Back
 
 [Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
