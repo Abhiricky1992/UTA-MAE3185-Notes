@@ -70,9 +70,9 @@ When a local variable is defined, it is not initialized by the system, you must 
 
 # Next
 
-[Arrays](../sec09/functions.md)
+[Arrays](../sec11/arrays.md)
 
 
 # Back
 
-[Functions](../sec11/arrays.md)
+[Functions](../sec09/functions.md)
