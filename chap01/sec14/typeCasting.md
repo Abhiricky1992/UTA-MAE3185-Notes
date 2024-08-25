@@ -28,7 +28,7 @@ Type conversions can also be [implicit](https://www.geeksforgeeks.org/implicit-t
 
 # Next
 
-[Chapter 2](../../chap02/preliminaries)
+[Chapter 2](../../chap02/preliminaries.md)
 
 # Back
 [Preprocessors](../sec13/preprocessors.md)
