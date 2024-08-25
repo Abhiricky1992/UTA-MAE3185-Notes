@@ -67,6 +67,10 @@ strcpy(str3, str1): Hello
 strcat(str1, str2): HelloWorld
 strlen(str1): 10
 ```
+# Back
+
+[Preprocessors](../sec13/preprocessors.md)
 
 # Back
-[Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
+
+[Arrays](../sec11/arrays.md)
