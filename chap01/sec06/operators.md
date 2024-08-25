@@ -214,6 +214,10 @@ Following table shows the operator precedence order where, operators with the hi
 |                | `>>=`, `<<=`, `&=`, `^=`, `\|=`   |   Right to left   |
 |      Comma     |                 `,`               |   Left to right   |
 
+# Next
+
+[Decision Making](../sec07/decisionMaking.md)
 
 # Back
-[Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
+
+[Constants and Literals](../sec05/constantsAndLiterals.md)
