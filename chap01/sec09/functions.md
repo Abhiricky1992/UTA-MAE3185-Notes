@@ -72,7 +72,7 @@ int max(int num1, int num2)
 
 # Next
 
-[Scope Rules](../sec09/scopeRules.md)
+[Scope Rules](../sec10/scopeRules.md)
 
 # Back
 
