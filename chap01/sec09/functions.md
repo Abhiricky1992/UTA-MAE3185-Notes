@@ -70,5 +70,10 @@ int max(int num1, int num2)
 }
 ```
 
+# Next
+
+[Scope Rules](../sec09/Scope Rules.md)
+
 # Back
-[Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
+
+[Loops](../sec08/loops.md)
