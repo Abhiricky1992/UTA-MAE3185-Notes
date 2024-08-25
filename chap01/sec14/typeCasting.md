@@ -26,6 +26,9 @@ It should be noted here that the cast operator has precedence over division, so 
 
 Type conversions can also be [implicit](https://www.geeksforgeeks.org/implicit-type-conversion-in-c-with-examples/) which is performed by the compiler automatically, or it can be specified explicitly through the use of the cast operator. It is considered good programming practice to use the cast operator whenever type conversions are necessary.
 
+# Next
+
+[Chapter 2](../../chap02/preliminaries)
 
 # Back
-[Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
+[Preprocessors](../sec13/preprocessors.md)
