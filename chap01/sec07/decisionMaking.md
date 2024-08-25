@@ -107,7 +107,7 @@ int main () {
 ```
 # Next
 
-[Loops](../sec07/loops.md)
+[Loops](../sec08/loops.md)
 
 # Back
 
