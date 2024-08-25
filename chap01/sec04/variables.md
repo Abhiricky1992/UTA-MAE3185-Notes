@@ -29,4 +29,4 @@ int d = 3, f = 5; // definition and initializing d and f.
 char x = 'x';     // the variable x has the value 'x'.
 ```
 # Back
-[Data Types](../sec04/dataTypes.md)
+[Data Types](../sec03/dataTypes.md)
