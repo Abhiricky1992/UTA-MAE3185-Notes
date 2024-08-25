@@ -42,5 +42,10 @@ The following table provide the details of standard floating-point types with st
 | `long double` |      10 byte     | 3.4E-4932 to 1.1E+4932 | 19 decimal places |
 
 
+# Next 
+
+[Variables](../sec04/variables.md)
+
 # Back
-[Back to Chapter 1](../summaryOfBasicCCppProgramming.md)
+
+[Basic Syntax](../sec03/basicSyntax.md)
