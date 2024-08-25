@@ -28,5 +28,10 @@ Some examples are,
 int d = 3, f = 5; // definition and initializing d and f.
 char x = 'x';     // the variable x has the value 'x'.
 ```
+# Next
+
+[Constants and Literals](../sec05/constantsAndLiterals.md)
+
 # Back
+
 [Data Types](../sec03/dataTypes.md)
