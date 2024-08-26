@@ -20,7 +20,7 @@ This section explains how the software installed so far can be used to compile a
 ### Step 7
 ![7](./figs/mac/openFolderInVSCode/7.png)
   
-- Follow the steps for [compiling the code](https://github.com/Abhiricky1992/mae3185Notes/blob/master/appnA/sec04/helloWorld.md#compile-code).
+- Follow the steps for [compiling the code](helloWorld.md#compile-code).
 
 ## Windows/Linux
 - Create a folder with any name you like on the desktop.
