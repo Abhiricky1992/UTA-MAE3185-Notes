@@ -46,7 +46,7 @@ This section explains how the software installed so far can be used to compile a
   ### Step 4
   ![4](./figs/windows/reopenInWSL/4.png)
 
-- Follow the steps for [compiling the code](https://github.com/Abhiricky1992/mae3185Notes/blob/master/appnA/sec04/helloWorld.md#compile-code).
+- Follow the steps for [compiling the code](./helloWorld.md#compile-code).
 
 
 ## Compile Code
