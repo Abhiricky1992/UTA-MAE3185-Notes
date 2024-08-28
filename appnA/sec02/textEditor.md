@@ -90,5 +90,5 @@ Any text editor, like Notepad, TextEdit, Notepad++, etc., can be used to write C
 ## Next 
 - [Raspberry Pi Pico C/C++ SDK](../sec03/piPicoSDK.md)
 ## Back
-- [Back to software installation](../sec01/armToolchain.md)
+- [Arm Toolchain](../sec01/armToolchain.md)
 
