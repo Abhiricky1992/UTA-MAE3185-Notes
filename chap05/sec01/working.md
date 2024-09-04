@@ -30,7 +30,7 @@ Although an ADC has a resolution as high as 0.8mV, it doesn't mean it is accurat
 
 # Next
 
-[`hardware_adc` Library Functions](../sec02/libraryFunctions)
+[`hardware_adc` Library Functions](../sec02/libraryFunctions.md)
 
 # Back
 [Back to Chapter 4](../adc.md)
