@@ -28,5 +28,9 @@ $$\begin{equation*}
 
 Although an ADC has a resolution as high as 0.8mV, it doesn't mean it is accurate. The accuracy depends heavily on the stability of GND and VREF signals. For example, in Raspberry Pi Pico, the VREF signal provided to the ADC is not very accurate and thus the [datasheet (Section 4.3)](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf#page=18) suggests that an external more stable 3.3V reference should be provided if higher ADC accuracy is desired.
 
+# Next
+
+[`hardware_adc` Library Functions](../sec02/libraryFunctions)
+
 # Back
 [Back to Chapter 4](../adc.md)
