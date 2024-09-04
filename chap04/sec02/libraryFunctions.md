@@ -40,5 +40,9 @@ This function sets up the state of the GPIO to be controlled by a specific perip
 - Function input `pinNo` can be any GPIO number, i.e. 0 through 29.
 - Function input `func` must be an unsigned integer value from the table. Necessary constants representing different functions are already defined in the SDK as follows, `GPIO_FUNC_SPI = 1`, `GPIO_FUNC_UART = 2`, `GPIO_FUNC_I2C = 3`, `GPIO_FUNC_PWM = 4`,`GPIO_FUNC_SIO = 5`.
 
-- # Back
-[Back to Chapter 4](../gpio.md)
+# Next
+
+[Code Examples](../sec03/codeExamples.md)
+
+# Back
+[Working of a GPIO](../sec01/working.md)
