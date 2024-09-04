@@ -110,14 +110,17 @@ We learned how to upload a compiled binary to the &mu;C in the last section. Spe
 **It has been seen that CoolTerm doesn't work well on certain Windows devices and it takes too long to start up. If you are having issues, you can instead install Putty, whose interface, though is not as fancy as CoolTerm, is very simple and works on all devices. Instructions for installation of Putty are below**
 
 ## Step 1
-Go to the [website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and download the 64 bit x86 MSI Installer
+Go to the [website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and download the 64 bit x86 MSI Installer.
+
 ![1](./figs/windows/putty/puttyInstaller.png)
 
 ## Step 2
 Open the installer and follow the instructions to install it. You should be able to see the Putty App in your Search bar at the end of the install process.
+![1](./figs/windows/putty/puttyApp.png)
 
 ## Step 3
-To run Putty, see the lecture video for 6 September 2024 on canvas
+
+On detailed instructions on how to run  Putty, see the lecture video for 6 September 2024 on canvas
 
 # Back
 [Back to Chapter 3](../theMicrocontrollerAndCodeDevelopment.md)
