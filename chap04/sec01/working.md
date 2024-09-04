@@ -58,7 +58,9 @@ Similar to Pull-Down configuration, 3.3V is connected to the junction, instead o
 ```{note}
 Pull-Down and Pull-Up input methods work fine only if there is no resistor before the physical pin larger than the pull-down/pull-up resistors. Think about the voltage drop in the case of two series resistors.
 ````
+# Next
 
+[Library Functions of a GPIO](../sec02/libraryFunctions.md)
 
 # Back
 [Back to Chapter 4](../gpio.md)
