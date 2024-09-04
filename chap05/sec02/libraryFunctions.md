@@ -24,6 +24,10 @@ This function prepares an ADC input for reading.
 ## `uint16_t adc_read()`
 This function makes ADC to read voltage from the input selected using `adc_select_input(adcIn)` function.
 - Function returns an unsigned integer in the range of 0-4095 that corresponds to the measured voltage.
+# Next
+
+[Code Examples](../sec03/codeExamples.md)
 
 # Back
-[Back to Chapter 4](../adc.md)
+
+[Working of an ADc](../sec01/working.md)
