@@ -60,7 +60,7 @@ Pull-Down and Pull-Up input methods work fine only if there is no resistor befor
 ````
 # Next
 
-[Library Functions of a GPIO](../sec02/libraryFunctions.md)
+[`hardware_gpio` Library Functions](../sec02/libraryFunctions.md)
 
 # Back
 [Back to Chapter 4](../gpio.md)
