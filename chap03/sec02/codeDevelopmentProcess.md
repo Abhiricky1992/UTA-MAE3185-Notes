@@ -68,6 +68,7 @@ Starting next chapter, we'll discuss different peripherals available in the &mu;
 
 ## Copy the Code to the &mu;C
 You can build/compile this code into a `.uf2` file by clicking on the 'Build' button in VSCode. We have to transfer this **binary**, the `.uf2` file, to the &mu;C for it to run. This is where the `BOOTSEL` button on the &mu;C comes into picture. Connect the &mu;C to your laptop through the USB cable while keeping the `BOOTSEL` button pressed down. This will cause the &mu;C to boot into the 'USB Storage' mode. You'll see a USB drive detected in your laptop. Now you can copy the `.uf2` file into the USB drive. As soon as the copying completes, the &mu;C reboots and starts running the code that you have just copied.
-
+# Next 
+[Microcontroller Laptop Communication](../sec03/ucLaptopComm.md)
 # Back
-[Back to Chapter 3](../theMicrocontrollerAndCodeDevelopment.md)
+[Raspberry Pi Pico](../sec01/raspberryPiPico.md)
