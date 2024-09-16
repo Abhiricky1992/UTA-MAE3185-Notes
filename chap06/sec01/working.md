@@ -161,5 +161,9 @@ t_H = \frac{\mathtt{CC}}{f_{sys}} \cdot \mathtt{DIV}
 
 The `CC` value is also a 16-bit number, i.e. $0 \leq$ `CC` $\leq 65535$. Also note that if `CC` is 0 then the PWM output is always `LOW` and if `CC` &gt; `TOP` then the PWM output is always `HIGH`.
 
+# Next 
+
+[`hardware_pwm` Library Functions](../sec02/libraryFunctions.md)
+
 # Back
 [Back to Chapter 5](../pwm.md)
