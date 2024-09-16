@@ -44,7 +44,7 @@ Enable or disable the PWM output.
 
 # Next
 
-[Code Examples](../sec01/codeExamples.md)
+[Code Examples](../sec03/codeExamples.md)
 
 # Back
 
