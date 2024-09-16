@@ -41,5 +41,11 @@ Configure the counter compare value.
 Enable or disable the PWM output.
 - Function input `sliceNum` is the PWM slice number that you want to enable or disable.
 - Function input `enabled` must be a boolean value, i.e. `0` to disable the output and `1` to enable the output.
+
+# Next
+
+[Code Examples](../sec01/codeExamples.md)
+
 # Back
-[Back to Chapter 5](../pwm.md)
+
+[Working of a PWM](../sec01/working.md)
