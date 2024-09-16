@@ -16,6 +16,50 @@ int main()
     while (true);
 }
 ```
+## Blink Onboard LED
+Following code blinks the onboard LED and an external LED connected to GPIO 16
+```c++
+#include <stdio.h>
+#include <pico/stdlib.h>
+#include <hardware/gpio.h>
+
+#define ledPin1 25
+#define ledPin2 16
+
+void setup()
+{
+   stdio_init_all();
+   gpio_init(ledPin1);
+   gpio_init(ledPin2);
+   gpio_set_dir(ledPin1,true);
+   gpio_set_dir(ledPin2,true);
+
+    
+}
+
+void loop()
+{
+   
+    gpio_put(ledPin1,true);
+    sleep_ms(1000);
+    gpio_put(ledPin1,false);
+    sleep_ms(1000);
+
+    gpio_put(ledPin2,true);
+    sleep_ms(200);
+    gpio_put(ledPin2,false);
+    sleep_ms(200);
+  
+}
+
+int main()
+{
+    setup();
+
+    while (true)
+        loop();
+}
+```
 ## Read `HIGH` or `LOW` using a GPIO
 Following code configures a GPIO as an input. The exact configuration can be set by changing values in `gpio_set_pulls` function.
 ```c++
