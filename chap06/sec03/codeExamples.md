@@ -2,46 +2,43 @@
 ## Output a PWM signal on the onboard LED
 Following code makes GPIO 25 output a PWM signal of changing duty cycle. This causes the onboard LED, connected to GPIO 25, to glow gradually from being off to full intensity.
 ```c++
-#include <stdio.h>
 #include <pico/stdlib.h>
 #include <hardware/gpio.h>
 #include <hardware/pwm.h>
 
-#define LED_PIN 25
+#define ledPin 25
 
-uint16_t cc = 0;
-uint8_t s;
-uint8_t c;
+
+int ccVal = 0;
 
 void setup()
 {
-    // Initialize GPIO 25 to work with PWM
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN,true);
-    gpio_set_function(LED_PIN,GPIO_FUNC_PWM);
+    gpio_init(ledPin);
+    gpio_set_dir(ledPin, true);
+    
 
-    // Find out PWM slice and channel numbers for GPIO 25
-    s = pwm_gpio_to_slice_num(LED_PIN);
-    c = pwm_gpio_to_channel(LED_PIN);
-
-    // Configure the PWM peripheral to output a base signal at 2.9985kHz.
-    pwm_set_clkdiv_int_frac(s,41,11);
-    pwm_set_wrap(s,999);
-    pwm_set_chan_level(s,c,cc);
-    pwm_set_enabled(s,true);
+    gpio_put(ledPin,true);
+    sleep_ms(5000);
+    gpio_set_function(ledPin,GPIO_FUNC_PWM);
+   
+    pwm_set_clkdiv_int_frac(pwm_gpio_to_slice_num(ledPin), 125, 0);  //Set DIV_i and DIV_f values
+    pwm_set_wrap(pwm_gpio_to_slice_num(ledPin), 99); //Set TOP values
+    pwm_set_enabled(pwm_gpio_to_slice_num(ledPin), 1); //Enable PWM
 }
 
 void loop()
 {
-    // Increase the duty cycle by 0.1% every 10ms.
-    pwm_set_chan_level(s,c,cc++);
-    cc %= 1000;
+    
+    pwm_set_chan_level(pwm_gpio_to_slice_num(ledPin),pwm_gpio_to_channel(ledPin),ccVal++); Set CC values to go from 0 to max val
+    ccVal%=100;//ccVal = ccVal%100;
     sleep_ms(10);
+    
 }
 
 int main()
 {
     setup();
+
     while (true)
         loop();
 }
