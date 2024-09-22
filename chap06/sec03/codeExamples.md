@@ -44,7 +44,7 @@ int main()
 }
 ```
 ## PWM DC Motor
-Use PWM signals to repeatedly turn a DC motor clockwise from zero to full speed and then rotate it again from zero to full speed  in the reverse direction direction
+Use PWM signals to repeatedly turn a DC motor from zero to full speed clockwise and then rotate it again from zero to full speed  in the reverse direction
 ```c++
 #include <pico/stdlib.h>
 #include <hardware/gpio.h>
