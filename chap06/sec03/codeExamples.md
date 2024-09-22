@@ -43,5 +43,68 @@ int main()
         loop();
 }
 ```
+## PWM DC Motor
+Use PWM signals to repeatedly turn a DC motor clockwise from zero to full speed and then rotate it again from zero to full speed  in the reverse direction direction
+```c++
+#include <pico/stdlib.h>
+#include <hardware/gpio.h>
+#include <hardware/pwm.h>
+
+#define in1 0
+#define in2 15
+#define ledPin 25
+
+int ccVal = 0;
+
+void setup()
+{
+    gpio_init(in1);
+    gpio_set_dir(in1, true);
+    gpio_set_function(in1, GPIO_FUNC_PWM);
+
+    gpio_init(in2);
+    gpio_set_dir(in2, true);
+    gpio_set_function(in2, GPIO_FUNC_PWM);
+
+    gpio_init(ledPin);
+    gpio_set_dir(ledPin,true);
+    gpio_put(ledPin,true);
+
+    pwm_set_clkdiv_int_frac(pwm_gpio_to_slice_num(in1), 125, 0);
+    pwm_set_wrap(pwm_gpio_to_slice_num(in1), 99);
+
+    pwm_set_clkdiv_int_frac(pwm_gpio_to_slice_num(in2), 125, 0);
+    pwm_set_wrap(pwm_gpio_to_slice_num(in2), 99);
+
+    
+    pwm_set_enabled(pwm_gpio_to_slice_num(in2), 1);
+    pwm_set_enabled(pwm_gpio_to_slice_num(in1), 1);
+
+}
+
+void loop()
+{
+    pwm_set_chan_level(pwm_gpio_to_slice_num(in2), pwm_gpio_to_channel(in2), 0);
+    for (int i = 0; i < 100; ++i)
+    {
+        pwm_set_chan_level(pwm_gpio_to_slice_num(in1), pwm_gpio_to_channel(in1), i);
+        sleep_ms(100);
+    }
+    pwm_set_chan_level(pwm_gpio_to_slice_num(in1), pwm_gpio_to_channel(in1), 0);
+    for (int i = 0; i < 100; ++i)
+    {
+        pwm_set_chan_level(pwm_gpio_to_slice_num(in2), pwm_gpio_to_channel(in2), i);
+        sleep_ms(100);
+    }
+}
+
+int main()
+{
+    setup();
+
+    while (true)
+        loop();
+}
+```
 # Back
 [Back to Chapter 5](../pwm.md)
