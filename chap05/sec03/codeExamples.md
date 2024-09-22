@@ -32,6 +32,42 @@ int main()
         loop();
 }
 ```
+## Onboard Temperature Sensor
+Use ADC to measure temperature from the onborad temperature sensor.
+```c++
+#include <stdio.h>
+#include <pico/stdlib.h>
+#include <hardware/gpio.h>
+#include <hardware/adc.h>
 
+#define adcPin 4
+
+void setup()
+{
+    stdio_init_all();
+
+    adc_init();
+    adc_set_temp_sensor_enabled(true);
+    adc_select_input(adcPin);
+
+}
+
+void loop()
+{
+    int x = adc_read();
+    float adcConvertToVoltage  = (float) x/4095*3.3;
+    float convertToTemp = 27-(adcConvertToVoltage-0.706)/0.001721;
+    printf("%.2f degrees C\r\n", convertToTemp);
+    sleep_ms(100);
+}
+
+int main()
+{
+    setup();
+
+    while (true)
+        loop();
+}
+```
 # Back
 [Back to Chapter 4](../adc.md)
