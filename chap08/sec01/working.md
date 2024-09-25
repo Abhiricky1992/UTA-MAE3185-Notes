@@ -17,7 +17,7 @@ An I<sup>2</sup>C message always starts with a **Start** condition, where the co
 
 <!-- Script to fetch the JSON file and render the diagram -->
 <script>
-    fetch('./wavedrom/i2cStart.json')  // Use the correct path to your JSON file
+    fetch('wavedrom/i2cStart.json')  // Use the correct path to your JSON file
       .then(response => response.json())
       .then(jsonData => {
         // Create a div for WaveDrom to render the diagram
