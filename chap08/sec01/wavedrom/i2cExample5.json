@@ -1,0 +1,24 @@
+{signal: [
+    {
+        node: '.C.....D.....E.....F.....G.....H.....I.....J.....K.....LM...N',
+        period: 0.5,
+        phase: -0.5
+    },
+    {
+        name: 'SDA',
+        wave: '01.....0...........1.....0.....1.....0...........1.....0..1.',
+        period: 0.5,
+        phase: -0.5
+    },
+    {
+        name: 'SCL',
+        wave: '0..H..l..H..l..H..l..H..l..H..l..H..l..H..l..H..l..H..l..H..',
+        period: 0.5,
+        phase: -0.5
+    }
+],
+edge: ['C<->K 8-bit Data from Target', 'K<->L Nack', 'M<->N St'
+],
+config: {skin:'narrow'
+}
+}

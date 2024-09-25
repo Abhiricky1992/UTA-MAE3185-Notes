@@ -1,0 +1,15 @@
+{signal: [
+    {name: 'SDA', wave: '1.0....5.....................................................................5.........4.........z', node: 'A...B', data: [
+        "7-bit Address",
+        "Read/Write",
+        "Ack/Nack"
+        ], period: 0.5
+    },
+    {name: 'SCL', wave: '1....l....H....l....H....l....H....l....H....l....H....l....H....l....H....l....H....l....H....l..', period: 0.5
+}
+],
+edge: ['A-B Start'
+],
+config: {skin:'narrow'
+}
+}
