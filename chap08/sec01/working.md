@@ -10,14 +10,14 @@ Tackling of these challenges and the communication of the information is handled
 
 An I<sup>2</sup>C message always starts with a **Start** condition, where the controller pulls the SDA line low, i.e. the voltage is changed from 3.3V to 0V, while the SCL line is kept high. 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.1.0/skins/default.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.1.0/wavedrom.min.js" type="text/javascript"></script>
+<!-- Element where the WaveDrom diagram will be rendered -->
+<div id="wavedrom-diagram"></div>
 
-
-  <!-- Element where the WaveDrom diagram will be rendered -->
-  <div id="wavedrom-diagram"></div>
-
-  <!-- Script to fetch the JSON file and render the diagram -->
-  <script>
-    fetch('/assets/data/diagram.json')  // Use the correct path to your JSON file
+<!-- Script to fetch the JSON file and render the diagram -->
+<script>
+    fetch('./wavedrom/i2cStart.json')  // Use the correct path to your JSON file
       .then(response => response.json())
       .then(jsonData => {
         // Create a div for WaveDrom to render the diagram
