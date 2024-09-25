@@ -9,13 +9,14 @@ There are two challenges that needs to be tackled before the real information is
 Tackling of these challenges and the communication of the information is handled through I<sup>2</sup>C messages.
 
 An I<sup>2</sup>C message always starts with a **Start** condition, where the controller pulls the SDA line low, i.e. the voltage is changed from 3.3V to 0V, while the SCL line is kept high. 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.1.0/skins/default.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.1.0/wavedrom.min.js" type="text/javascript"></script>
 <body onload="WaveDrom.ProcessAll()">
- 
 <script type="WaveDrom">
 wavedrom/i2cStart.json
 </script>
+ 
 The start condition is always followed by 7 or 10 bit **Address**. This is where the controller specifies which target it wants to communicate with. After the address, the controller sends a **Read/Write** bit. As the name suggests, it sends a 0 if it wants to write/transmit some data to the target otherwise it sends a 1 to read/receive some data. The controller releases the SDA line at this point for a target to change the voltage. If no target exists with the address specified by the controller, then the SDA line voltage stays high due to pull-up resistor representing a **N**o **ack**nowledgement. However, if a target does exist with the address specified, then it pulls the SDA line low as an **Ack**nowledgement.
 
 If the Ack was received and the Read/Write bit was 1 during the communication so far, then the control of SDA line is left with the target. Now the target can send 8-bits of data during next 8 clock cycles as shown in the figure below.
