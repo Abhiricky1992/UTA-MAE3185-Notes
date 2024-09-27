@@ -1,6 +1,6 @@
 # Code Examples
 ## I<sup>2</sup>C communication between the &mu;C and an [MCP9808](https://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf) temperature sensor
-Following code configures `i2c0` on the &mu;C to work in standard mode, i.e. at 100 kb/s baud rate. Then it communicates with the [MCP9808](https://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf) temperature sensor to receive a 2 byte long temperature value and converts it into a value with &deg;C unit.
+Following code configures `i2c1` on the &mu;C to work in standard mode, i.e. at 100 kb/s baud rate. Then it communicates with the [MCP9808](https://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf) temperature sensor to receive a 2 byte long temperature value and converts it into a value with &deg;C unit.
 ```c++
 #include <stdio.h>
 #include <pico/stdlib.h>
