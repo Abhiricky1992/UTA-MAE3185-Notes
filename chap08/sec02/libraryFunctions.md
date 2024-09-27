@@ -35,3 +35,6 @@ Initiate an I<sup>2</sup>C message to read data from a target.
 - Function input `nostop` indicates whether the controller should send a stop condition after receiving `len` bytes of data. If this value is `true` then stop condition is not sent otherwise it is sent. This is helpful in conveying a repeated start situation.
 - Function returns a positive integer indicating the number of bytes received successfully. The return value might be -2 if the target with the `addr` wasn't present.
 - This function doesn't exit until all the data is received or an error occurred.
+
+## Next
+[Code Examples](sec03/codeExamples.md)
