@@ -37,4 +37,4 @@ Initiate an I<sup>2</sup>C message to read data from a target.
 - This function doesn't exit until all the data is received or an error occurred.
 
 ## Next
-[Code Examples](sec03/codeExamples.md)
+[Code Examples](../sec03/codeExamples.md)
