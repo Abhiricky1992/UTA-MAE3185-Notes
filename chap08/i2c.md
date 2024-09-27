@@ -18,6 +18,5 @@ I<sup>2</sup>C Connection in Raspi Pico
 </p>
 
 ## Sections
-- [Section 1 - Working of a I<sup>2</sup>C](sec01/working.md)
-- [Section 2 - `hardware_i2c` Library Functions](sec02/libraryFunctions.md)
-- [Section 3 - Code Examples](sec03/codeExamples.md)
+- [Section 1 - `hardware_i2c` Library Functions](sec02/libraryFunctions.md)
+- [Section 2 - Code Examples](sec03/codeExamples.md)
