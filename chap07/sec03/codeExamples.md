@@ -1,72 +1,74 @@
 # Code Examples
 ## UART communication between two Raspberry Pi Picos
-Following two codes configures two &mu;Cs to communicate through UART protocol. One &mu;C send characters `a` and `d` at 1 second intervals. The second &mu;C reads the transmitted characters. It turns the LED connected to GPIO 25 on if character `a` is received. Otherwise, it turns the LED off if character `d` is received.
+Following two codes configures two &mu;Cs to communicate through UART protocol. One &mu;C send characters `a`, `b` and 'p' at 1 second intervals. The second &mu;C reads the transmitted characters. It turns the LED connected to GPIO 25 on if character `a` is received. Otherwise, it turns the LED off if character `b` is received. 'p' has noeffect on the LED light.
 ```c++
-#include <stdio.h>
 #include <pico/stdlib.h>
-#include <hardware/gpio.h>
 #include <hardware/uart.h>
+#include <hardware/gpio.h>
 
-#define UART_TX 12  // Define the GPIO used as UART TX pin
+#define uartTx 16
 
 void setup()
 {
-    stdio_init_all();
-    uart_init(uart0, 9600); // Initialize UART instance 0 with baud rate of 9600 bits/s
+    gpio_init(uartTx);
+    gpio_set_dir(uartTx, true);
+    gpio_set_function(uartTx, GPIO_FUNC_UART);
 
-    gpio_init(UART_TX); // Configure the GPIO to work in conjuction with UART
-    gpio_set_function(UART_TX, GPIO_FUNC_UART);
+    uart_init(uart0, 115200);
 }
 
 void loop()
 {
-    uart_putc(uart0, 'd'); // Transmit character 'd' through UART
-    sleep_ms(1000); // Wait for 1 second
-    uart_putc(uart0, 'a'); // Transmit character 'a' through UART
-    sleep_ms(1000); // Wait for 1 second
+    uart_putc(uart0, 'a'); // LED ON
+    sleep_ms(1000);
+    uart_putc(uart0, 'b'); // LED OFF
+    sleep_ms(1000);
+    uart_putc(uart0, 'p'); // Don't do anything
+    sleep_ms(1000);
 }
 
 int main()
 {
     setup();
+
     while (true)
         loop();
 }
 ```
 
 ```c++
-#include <stdio.h>
 #include <pico/stdlib.h>
-#include <hardware/gpio.h>
 #include <hardware/uart.h>
+#include <hardware/gpio.h>
 
-#define UART_RX 1   // Define the GPIO used as UART RX pin
-#define LED_PIN 25  // Define the LED pin
+#define ledPin 25
+#define uartRx 17
 
 void setup()
 {
-    stdio_init_all();
+    gpio_init(ledPin);
+    gpio_set_dir(ledPin, true);
 
-    uart_init(uart0,9600);  // Initialize UART instance 0 with baud rate of 9600 bits/s
+    gpio_init(uartRx);
+    gpio_set_dir(uartRx, false);
+    gpio_set_function(uartRx, GPIO_FUNC_UART);
 
-    gpio_init(UART_RX); // Configure the GPIO to work in conjuction with UART
-    gpio_set_function(UART_RX,GPIO_FUNC_UART);
-    gpio_init(LED_PIN); // Configure the GPIO as an output
-    gpio_set_dir(LED_PIN,true);
+    uart_init(uart0, 115200);
 }
 
 void loop()
 {
-    char c = uart_getc(uart0);  // Receive a character through UART
-    if (c == 'd')   // If the received character is 'd' then turn the LED off
-        gpio_put(LED_PIN,0);
-    else if (c == 'a')  // Else if the received character is 'a' then turn the LED on
-        gpio_put(LED_PIN,1);
+    char c = uart_getc(uart0);
+    if (c == 'a')
+        gpio_put(ledPin, 1);
+    else if (c == 'b')
+        gpio_put(ledPin, 0);
 }
 
 int main()
 {
     setup();
+
     while (true)
         loop();
 }
