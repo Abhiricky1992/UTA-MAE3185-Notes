@@ -78,14 +78,14 @@ void setup()
 
     i2c_init(i2c0, 100000);
 
-    // Setup sensor
+    // Setup sensor in AMG mode
     uint8_t sndData[2] = {oprMode, amgMode};
     i2c_write_blocking(i2c0, sensAdd, sndData, 2, true);
 }
 
 void loop()
 {
-    uint8_t sndData[1] = {0x8};
+    uint8_t sndData[1] = {0x8};//Address of UNIT_SEL ReG that contains the 18 bytes of data
     uint8_t recData[18] = {0};
 
     i2c_write_blocking(i2c0, sensAdd, sndData, 1, true);
