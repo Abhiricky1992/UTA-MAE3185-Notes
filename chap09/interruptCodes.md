@@ -47,7 +47,7 @@ int main()
         loop();
 }
 ```
-## Using Encoder using Interrupts
+## Measure angle and direction of rotation using an Encoder events
 Following code uses interrupts to count the events triggered by a encoder as it is rotating. These events are converted into the angle of rotation and the state of pin B gives the direction of rotation
 ```c++
 #include <stdio.h>
