@@ -103,3 +103,79 @@ int main()
         loop();
 }
 ```
+## State Machine
+Following code repeats two tasks "OutTask" and "InTask" at intervals of 1 s and 0.1 s respectively
+```c++
+#include <stdio.h>
+#include <pico/stdlib.h>
+#include <hardware/gpio.h>
+#include <hardware/irq.h>
+#include <hardware/timer.h>
+
+#define outPin 16
+#define inPin 17
+#define ledPin 25
+
+//Define timers dpending on the number of funtions you have
+struct repeating_timer timer1;
+struct repeating_timer timer2;
+
+const uint outTaskTime = 1e6;
+const uint inTaskTime  = 1e5;
+
+
+bool outPinState = 1;
+bool outTask(__unused struct repeating_timer *t) 
+{
+ gpio_put(outPin,outPinState);
+ outPinState = !outPinState;
+
+ printf("OutTask called at %lld\r\n",time_us_64());
+
+ return true;
+
+    
+}
+
+bool inTask(__unused struct repeating_timer *t) 
+{
+    bool inPinState = gpio_get(inPin);
+    gpio_put(ledPin,inPinState);
+    printf("inTask called at %lld\r\n",time_us_64());
+    return true;
+
+}
+
+void setup()
+{
+    stdio_init_all();
+
+    gpio_init(outPin);
+    gpio_set_dir(outPin,true);
+
+    gpio_init(inPin);
+    gpio_set_dir(inPin,false);
+
+    gpio_init(ledPin);
+    gpio_set_dir(ledPin,true);
+  
+    //Timers and Interrupts
+    add_repeating_timer_us(outTaskTime,outTask,NULL,&timer1);
+    add_repeating_timer_us(inTaskTime,inTask,NULL,&timer2);
+    
+}
+
+void loop()
+{
+ //Other things
+
+}
+
+int main()
+{
+    setup();
+
+    while (true)
+        loop();
+}
+```
