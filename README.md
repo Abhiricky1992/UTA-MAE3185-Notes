@@ -13,4 +13,5 @@ Following is a brief list of topics discussed in various notes.
 - [Chapter 6 - Pulse Width Modulation](./chap06/pwm.md)
 - [Chapter 7 -  Inter-Integrated Circuit](./chap08/i2c.md)
 - [Chapter 8 -  Universal Asynchronous Receiver / Transmitter](./chap07/uart.md)
+- [Chapter 9 - Code Examples for Interrupts and Timers](./se
 - [Appendix A - Software Installation](./appnA/softwareInstallation.md)
