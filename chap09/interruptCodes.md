@@ -104,7 +104,7 @@ int main()
 }
 ```
 ## State Machine
-Following code repeats two tasks "OutTask" and "InTask" at intervals of 1s and 0.1s respectively using a combination of timer and interrupt.
+Following code repeats two tasks "OutTask" and "InTask" at intervals of 1s and 0.1s respectively using a combination of timers and interrupts. In code, time is measured in units of microseconds.
 ```c++
 #include <stdio.h>
 #include <pico/stdlib.h>
