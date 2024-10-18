@@ -104,7 +104,7 @@ int main()
 }
 ```
 ## State Machine
-Following code repeats two tasks "OutTask" and "InTask" at intervals of 1 s and 0.1 s respectively
+Following code repeats two tasks "OutTask" and "InTask" at intervals of 1s and 0.1s respectively using a combination of timer and interrupt.
 ```c++
 #include <stdio.h>
 #include <pico/stdlib.h>
@@ -116,15 +116,16 @@ Following code repeats two tasks "OutTask" and "InTask" at intervals of 1 s and 
 #define inPin 17
 #define ledPin 25
 
-//Define timers dpending on the number of funtions you have
+//Number of timers to be defined depend on the number of tasks
 struct repeating_timer timer1;
 struct repeating_timer timer2;
-
+//Define the time intervals at which the tasks need to be repeated
 const uint outTaskTime = 1e6;
 const uint inTaskTime  = 1e5;
 
 
 bool outPinState = 1;
+//Callback function for OutTask
 bool outTask(__unused struct repeating_timer *t) 
 {
  gpio_put(outPin,outPinState);
@@ -136,7 +137,7 @@ bool outTask(__unused struct repeating_timer *t)
 
     
 }
-
+//Callback function for InTask
 bool inTask(__unused struct repeating_timer *t) 
 {
     bool inPinState = gpio_get(inPin);
