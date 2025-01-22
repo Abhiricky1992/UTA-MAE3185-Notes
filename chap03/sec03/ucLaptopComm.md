@@ -120,7 +120,7 @@ Open the installer and follow the instructions to install it. You should be able
 
 ## Step 3
 
-On detailed instructions on how to run  Putty, see the lecture video for 6 September 2024 on canvas
+On detailed instructions on how to run  Putty, see the echo lectures.
 
 # Back
 [Back to Chapter 3](../theMicrocontrollerAndCodeDevelopment.md)
