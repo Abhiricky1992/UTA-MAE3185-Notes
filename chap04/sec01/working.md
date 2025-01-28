@@ -6,7 +6,7 @@ GPIO Junction on &mu;C Side vs the Physical Pin
 
 As the name suggests, a GPIO can broadly be configured either as an **Input** or as an **Output**. Keep in mind that the terms 'Input' and 'Output' here represent the direction of information transfer instead of the direction of the current flow. To make understanding different configurations easier, consider the above figure.
 
-In the figure, think of the &squ; as the physical pin where a wire from some external circuit may be connected. While, the &#x25CF; represents a junction on the &mu;C side. The &mu;C may make different connections at this junction based on the configuration.
+In the figure, think of the &#x25A1; as the physical pin where a wire from some external circuit may be connected. While, the &#x25CF; represents a junction on the &mu;C side. The &mu;C may make different connections at this junction based on the configuration.
 
 ## GPIO Output
 <p align="center">
