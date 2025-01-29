@@ -17,7 +17,7 @@ int main()
 }
 ```
 ## Blink Onboard LED
-Following code blinks the onboard LED and an external LED connected to GPIO 16
+Following code blinks the onboard LED and then an external LED connected to GPIO 16
 ```c++
 #include <stdio.h>
 #include <pico/stdlib.h>
@@ -29,10 +29,10 @@ Following code blinks the onboard LED and an external LED connected to GPIO 16
 void setup()
 {
    stdio_init_all();
-   gpio_init(ledPin1);
-   gpio_init(ledPin2);
-   gpio_set_dir(ledPin1,true);
-   gpio_set_dir(ledPin2,true);
+   gpio_init(ledPin1);  // Initialize GPIO 25
+   gpio_init(ledPin2); // Initialize GPIO 16
+   gpio_set_dir(ledPin1,true); // Configure GPIO 25 as an output
+   gpio_set_dir(ledPin2,true); // Configure GPIO 16 as an output
 
     
 }
@@ -40,12 +40,12 @@ void setup()
 void loop()
 {
    
-    gpio_put(ledPin1,true);
-    sleep_ms(1000);
-    gpio_put(ledPin1,false);
-    sleep_ms(1000);
-
-    gpio_put(ledPin2,true);
+    gpio_put(ledPin1,true); //Turn GPIO 25 on
+    sleep_ms(1000); //Pause 1000 miliseconds
+    gpio_put(ledPin1,false); //Turn GPIO 25 off
+    sleep_ms(1000); //Pause 1000 miliseconds
+    
+    gpio_put(ledPin2,true); //Same thing for external LED but blinking rate is 0.2 s
     sleep_ms(200);
     gpio_put(ledPin2,false);
     sleep_ms(200);
@@ -67,19 +67,22 @@ Following code configures a GPIO as an input. The exact configuration can be set
 #include <pico/stdlib.h>
 #include <hardware/gpio.h>
 
+#define inPin 15
+
 void setup()
 {
     stdio_init_all();
 
-    gpio_init(0);
-    gpio_set_dir(0,0);
-    gpio_set_pulls(0,0,0); // Change GPIO input configuration to see different behavior
+    gpio_init(inPin); // Configure GPIO 15 as an input
+    gpio_set_dir(inPin,false); // Configure GPIO 15 as an input
+    gpio_set_pulls(inPin,0,0); // Set GPIO input as floating (0,0), pull down (0,1) or pull up (1,0) 
 }
 
 void loop()
 {
-    bool x = gpio_get(0); // Read GPIO state, i.e. HIGH or LOW
+    bool x = gpio_get(inPin); // Read GPIO state, i.e. HIGH or LOW
     printf("%u\r\n",x); // Print out the GPIO state as 1 or 0
+    sleep_ms(200); //Sleep to give the print function time to work properly
 }
 
 int main()
